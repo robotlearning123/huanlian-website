@@ -3312,7 +3312,8 @@ html:not(.i18n-await) body {
   margin: 16px 0 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  /* 320px caps the row at 3 cards on a 1200px hero, so 6 cards land as 3x2. */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 16px;
 }
 
@@ -3721,6 +3722,10 @@ html:not(.i18n-await) body {
 
 /* Rich variant — with thumbnail + numbered ribbon */
 .overview-grid-rich {
+  list-style: none;
+  margin: 16px 0 0;
+  padding: 0;
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 18px;
 }
@@ -3900,6 +3905,32 @@ html:not(.i18n-await) body {
   font-size: clamp(56px, 7.4vw, 112px);
   letter-spacing: -0.025em;
   line-height: 1.02;
+}
+
+/* News list lives inside a dark cinematic hero, so repaint light-theme defaults. */
+.news-hero-rich .news-list {
+  padding: 12px 20px;
+  background: rgba(11, 12, 11, 0.55);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 12px;
+  border: 1px solid rgba(246, 241, 232, 0.08);
+}
+.news-hero-rich .news-item {
+  border-top-color: rgba(246, 241, 232, 0.12);
+  padding: 18px 4px;
+}
+.news-hero-rich .news-item:first-child {
+  border-top: none;
+}
+.news-hero-rich .news-date {
+  color: rgba(246, 241, 232, 0.65);
+}
+.news-hero-rich .news-title {
+  color: var(--bone, #f6f1e8);
+}
+.news-hero-rich .news-body {
+  color: rgba(246, 241, 232, 0.78);
 }
 
 /* Pillar cards — large numbered tiles, 3-up */

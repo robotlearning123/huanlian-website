@@ -60,6 +60,11 @@
     const cardVideos = [];
     const inViewVideos = [];
     allLooping.forEach((v) => {
+      // Hero loop must play immediately on load; first impression beats bandwidth savings.
+      if (v.classList.contains("hero-loop")) {
+        v.preload = "auto";
+        return;
+      }
       v.removeAttribute("autoplay");
       v.preload = "metadata";
       try { v.pause(); } catch (e) {}
@@ -69,13 +74,14 @@
         inViewVideos.push(v);
       }
     });
-    // In-view autoplay: cinematic banners, hero, demo backgrounds
+    // In-view autoplay: cinematic banners, demo backgrounds
     if (inViewVideos.length) {
       const playObserver = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
             const el = entry.target;
             if (entry.isIntersecting) {
+              if (el.readyState < 2) el.load();
               if (el.paused) el.play().catch(() => {});
             } else {
               if (!el.paused) el.pause();

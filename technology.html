@@ -46,7 +46,7 @@
   </script>
 </head>
   <body data-page="technology">
-    <a class="skip-to-content" href="#main-content">跳到正文 / Skip to content</a>
+    <a class="skip-to-content" href="#main-content">Skip to content</a>
     <header class="site-header" data-site-header>
       <a class="brand" href="index.html" aria-label="Huanlian Technology">
         <span class="brand-mark" aria-hidden="true"></span>
@@ -61,162 +61,65 @@
       </button>
             <nav class="primary-nav" id="primary-nav" data-primary-nav>
         <a href="index.html" data-nav-link="home" data-i18n="nav.home">首页</a>
+        <a href="platform.html" data-nav-link="platform" data-i18n="nav.platform">产品与服务</a>
         <a href="technology.html" data-nav-link="technology" data-i18n="nav.tech">核心技术</a>
-        <a href="platform.html" data-nav-link="platform" data-i18n="nav.platform">产品</a>
         <a href="apps.html" data-nav-link="apps" data-i18n="nav.apps">应用场景</a>
         <a href="partners.html" data-nav-link="partners" data-i18n="nav.partners">科研合作</a>
         <a href="shop.html" data-nav-link="shop" data-i18n="nav.shop">采购商城</a>
+        <a href="news.html" data-nav-link="news" data-i18n="nav.news">新闻动态</a>
+        <a href="about.html" data-nav-link="about" data-i18n="nav.about">关于我们</a>
         <a href="contact.html" data-nav-link="contact" data-i18n="nav.contact">联系我们</a>
         <button type="button" class="lang-switch" data-lang-switch>EN</button>
       </nav>
     </header>
 
     <main id="main-content">
-      <section class="page-hero tech-hero" aria-labelledby="technology-title">
-        <div>
-          <p class="eyebrow" data-i18n="tech.hero.kicker">技术路线 · Technology</p>
-          <h1 id="technology-title" data-i18n="tech.hero.title">全栈自主可控</h1>
-          <p data-i18n="tech.hero.lede">植入式 BCI 技术路线 · 生物兼容电极、低噪声高通量采集、智能植入定位与实时信号解析。从材料到算法全自主。</p>
+      <section class="page-hero tech-hero tech-hero-rich" id="pillars" aria-labelledby="technology-title">
+        <div class="tech-hero-bg" aria-hidden="true">
+          <img src="assets/images/hero-bg-technology.png" alt="" loading="eager">
         </div>
-        <figure class="tech-hero-media">
-          <img src="assets/images/tech-hero.png" alt="精密电极探针检测" loading="lazy">
-          <figcaption data-i18n="tech.hero.cap">NeuroBox 实验室</figcaption>
-        </figure>
+        <div class="page-hero-copy">
+          <h1 id="technology-title" data-i18n="tech.hero.title">核心技术</h1>
+          <p class="page-hero-lede" data-i18n="tech.pillars.lede">三大技术支柱，构建脑机接口全栈能力。</p>
+          <ul class="compact-grid pillar-grid">
+            <li class="compact-card pillar-card">
+              <span class="pillar-num">01</span>
+              <h4 data-i18n="tech.pillars.p1Title">先进材料与微纳制造</h4>
+              <p data-i18n="tech.pillars.p1Body">微纳加工 · 可溶性神经介质材料 · 高密度电极阵列</p>
+            </li>
+            <li class="compact-card pillar-card">
+              <span class="pillar-num">02</span>
+              <h4 data-i18n="tech.pillars.p2Title">芯片与系统集成</h4>
+              <p data-i18n="tech.pillars.p2Body">芯片设计 · 系统集成 · 高通量采集 · 低噪声放大</p>
+            </li>
+            <li class="compact-card pillar-card">
+              <span class="pillar-num">03</span>
+              <h4 data-i18n="tech.pillars.p3Title">算法与定位系统</h4>
+              <p data-i18n="tech.pillars.p3Body">软件解码 · 定位系统 · AI 峰电位分选 · 实时神经解码</p>
+            </li>
+          </ul>
+        </div>
       </section>
 
-      <section class="section-band challenge-band" aria-labelledby="challenge-title">
-        <div class="section-grid two-column">
-          <div>
-            <p class="eyebrow" data-i18n="tech.core.kicker">核心技术</p>
-            <h2 id="challenge-title" data-i18n="tech.core.title">三类核心技术能力</h2>
-          </div>
-          <p class="section-lede" data-i18n="tech.core.lede">幻联科技核心团队覆盖材料科学、微纳加工、芯片设计、神经电生理与算法开发，已掌握可溶性神经介质材料、硅基探针微纳加工、高频信号采集算法等关键技术，为高通量植入式 BCI 研发奠定底座。</p>
-        </div>
-      </section>
-
-      <section class="section-band technology-stack" aria-labelledby="stack-title">
+      <section class="section-band detail-band" id="tech-detail" aria-labelledby="detail-title">
         <div class="section-heading align-left">
-          <p class="eyebrow" data-i18n="tech.stack.kicker">技术栈</p>
-          <h2 id="stack-title" data-i18n="tech.stack.title">四大技术模块</h2>
+          <p class="eyebrow" data-i18n="tech.detail.kicker">技术详解</p>
+          <h2 id="detail-title" data-i18n="tech.detail.title">技术详解</h2>
+          <p class="section-lede" data-i18n="tech.detail.lede">六个方向，覆盖从基础材料到信号解码的完整链路。</p>
         </div>
-        <div class="stack-list">
-          <article class="stack-with-media">
-            <div class="stack-body">
-              <span class="stack-index">01</span>
-              <h3 data-i18n="tech.stack.t1">高通量植入电极</h3>
-              <p data-i18n="tech.stack.p1">密歇根硅基电极（32–256 通道）、ECoG 柔性皮层电极、PEG 封装微丝电极阵列，覆盖 Spike、LFP 与 ECoG 全频段记录，支持光遗传联用与微电流刺激。</p>
-            </div>
-            <figure class="stack-media">
-              <video src="assets/media/ecog-zoom.mp4" muted autoplay loop playsinline poster="assets/images/ecog-array.png"></video>
-              <figcaption class="stack-caption" data-i18n="tech.stack.cap1">ECoG 柔性皮层电极阵列</figcaption>
-            </figure>
-          </article>
-          <article class="stack-with-media">
-            <div class="stack-body">
-              <span class="stack-index">02</span>
-              <h3 data-i18n="tech.stack.t2">2048 通道神经信号采集</h3>
-              <p data-i18n="tech.stack.p2">NeuroBox 高通量主机，配套 Headstage 32/64 通道前端放大器与高速串行连接线，支持 0–30 kHz 在线采样、芯片带宽实时调节与多通道阻抗测量。</p>
-            </div>
-            <figure class="stack-media">
-              <img src="assets/images/tech-acquisition.png" alt="高密度数据采集模组" loading="lazy">
-              <figcaption class="stack-caption" data-i18n="tech.stack.cap2">NeuroBox 主机 / Headstage 前端</figcaption>
-            </figure>
-          </article>
-          <article class="stack-with-media">
-            <div class="stack-body">
-              <span class="stack-index">03</span>
-              <h3 data-i18n="tech.stack.t3">智能植入与脑图谱定位</h3>
-              <p data-i18n="tech.stack.p3">MPM 多臂脑图谱定位智能植入系统，可在单次实验中并行植入多支电极、光纤或注射针，是 Neuropixels 官方推荐适配的国产植入平台。</p>
-            </div>
-            <figure class="stack-media">
-              <img src="assets/images/tech-targeting.png" alt="多臂脑图谱定位平台" loading="lazy">
-              <figcaption class="stack-caption" data-i18n="tech.stack.cap3">MPM 多臂智能植入平台</figcaption>
-            </figure>
-          </article>
-          <article class="stack-with-media">
-            <div class="stack-body">
-              <span class="stack-index">04</span>
-              <h3 data-i18n="tech.stack.t4">实时信号软件与解码</h3>
-              <p data-i18n="tech.stack.p4">NeuroAnalysis 自研软件支持实时波形浏览、二进制存储、一键 Spike 分选、峰电位与事件相关分析，配套 AI 信号解析与可视化平台。</p>
-            </div>
-            <figure class="stack-media">
-              <video src="assets/media/tech-software-loop.mp4" muted autoplay loop playsinline poster="assets/images/waveform-monitor.png"></video>
-              <figcaption class="stack-caption" data-i18n="tech.stack.cap4">NeuroAnalysis 实时波形 / Spike 分选</figcaption>
-            </figure>
-          </article>
-        </div>
+        <ul class="compact-grid">
+          <li class="compact-card"><h4 data-i18n="tech.detail.d1Title">微纳制造</h4><p data-i18n="tech.detail.d1Body">硅基多通道微纳加工工艺，高密度排布，可定制通道，批次一致性高。</p></li>
+          <li class="compact-card"><h4 data-i18n="tech.detail.d2Title">材料科学</h4><p data-i18n="tech.detail.d2Body">可溶性神经介质材料，生物相容，可控降解，降低二次手术风险。</p></li>
+          <li class="compact-card"><h4 data-i18n="tech.detail.d3Title">芯片设计</h4><p data-i18n="tech.detail.d3Body">低噪声、低功耗、多通道并行采集芯片，16-bit ADC 分辨率。</p></li>
+          <li class="compact-card"><h4 data-i18n="tech.detail.d4Title">系统集成</h4><p data-i18n="tech.detail.d4Body">软硬件协同设计，模块化可扩展架构，最高支持 2048 通道。</p></li>
+          <li class="compact-card"><h4 data-i18n="tech.detail.d5Title">定位系统</h4><p data-i18n="tech.detail.d5Body">多臂脑图谱定位智能植入系统，亚毫米级植入精度，多臂协同操作。</p></li>
+          <li class="compact-card"><h4 data-i18n="tech.detail.d6Title">软件解码</h4><p data-i18n="tech.detail.d6Body">高频神经信号实时解码，AI 峰电位分选，低延时在线分析。</p></li>
+        </ul>
       </section>
 
-      <section class="section-band media-band" aria-labelledby="tech-launch-title">
-        <div class="section-grid media-layout">
-          <div>
-            <p class="eyebrow" data-i18n="tech.lab.kicker">实验台到病房</p>
-            <h2 id="tech-launch-title" data-i18n="tech.lab.title">从实验台到康复病房</h2>
-            <p class="section-lede" data-i18n="tech.lab.lede">我们的技术能力同步覆盖科研实验室与临床康复场景，硬件、软件与服务在两端共同验证。</p>
-          </div>
-          <div class="media-slots">
-            <figure class="media-slot large-slot">
-              <video src="assets/media/rehab-motion.mp4" muted autoplay loop playsinline poster="assets/images/tech-clinic-1.png"></video>
-              <figcaption data-i18n="tech.lab.cap1">康复中心</figcaption>
-            </figure>
-            <figure class="media-slot">
-              <img src="assets/images/tech-clinic-2.png" alt="神经电生理实验室" loading="lazy">
-              <figcaption data-i18n="tech.lab.cap2">电生理实验室</figcaption>
-            </figure>
-            <figure class="media-slot">
-              <img src="assets/images/ecog-array.png" alt="ECoG 柔性皮层电极" loading="lazy">
-              <figcaption data-i18n="tech.lab.cap3">ECoG 阵列</figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
 
-      <section class="section-band evidence-band" aria-labelledby="evidence-title">
-        <div class="section-heading">
-          <p class="eyebrow" data-i18n="tech.ext.kicker">扩展能力</p>
-          <h2 id="evidence-title" data-i18n="tech.ext.title">扩展能力</h2>
-          <p data-i18n="tech.ext.sub">除核心采集链路外，幻联科技在动物实验仿真、离体细胞分析与神经数据服务方向同样形成完整能力。</p>
-        </div>
-        <div class="evidence-grid">
-          <article>
-            <h3 data-i18n="tech.ext.t1">VR 实验仿真系统</h3>
-            <p data-i18n="tech.ext.p1">270° 多屏显示、运动交互平台与双 GPU 主机，支持沉浸式虚拟环境下的动物行为实验。</p>
-          </article>
-          <article>
-            <h3 data-i18n="tech.ext.t2">离体高密度微电极阵列</h3>
-            <p data-i18n="tech.ext.p2">HD-MEAs 支持体外细胞功能、发育、连接与形态实时无标记检测，是表型表征、疾病建模与药物研发的关键工具。</p>
-          </article>
-          <article>
-            <h3 data-i18n="tech.ext.t3">神经电生理数据分析</h3>
-            <p data-i18n="tech.ext.p3">原始信号降噪、Spike 分拣、时序分析、关联编码解析、批量数据处理与图谱可视化，覆盖论文级数据加工需求。</p>
-          </article>
-          <article>
-            <h3 data-i18n="tech.ext.t4">实验动物模型</h3>
-            <p data-i18n="tech.ext.p4">定制神经科学/脑机方向动物模型，标准化造模、饲养、行为学检测与样本制备，适配脑机器件植入验证。</p>
-          </article>
-        </div>
-      </section>
 
-      <section class="section-band intro-band" aria-labelledby="academic-title">
-        <div class="section-grid two-column">
-          <div>
-            <p class="eyebrow" data-i18n="tech.academic.kicker">学术服务</p>
-            <h2 id="academic-title" data-i18n="tech.academic.title">学术服务与三年科研合作计划</h2>
-          </div>
-          <p class="section-lede" data-i18n="tech.academic.lede">团队由国家级人才领衔，年均发表多篇高分 SCI 论文，核心负责人担任三甲医院双聘教授。可提供顶级期刊学术支持、国家级科研项目申报辅导、研究特色挖掘、实验室交流、国际高校合作及高端人才引进。面向医院脑机接口团队推出三年科研合作计划，分阶段培育科研基础、产出成果、构建可持续科研能力。</p>
-        </div>
-      </section>
-      <section class="contact-band" aria-labelledby="tech-cta-title">
-        <div>
-          <p class="eyebrow" data-i18n="tech.cta.kicker">下一步</p>
-          <h2 id="tech-cta-title" data-i18n="tech.cta.title">把整套技术栈接到你的实验室</h2>
-          <p data-i18n="tech.cta.lede">说明应用场景与通道规格，我们 1-2 个工作日内给出完整方案与报价。</p>
-        </div>
-        <p class="launch-actions">
-          <a class="button button-primary" href="mailto:AstroMind@xnzlsmart.cn?subject=Technology%20Inquiry" data-i18n="tech.cta.cta1">发送询价</a>
-          <a class="button button-secondary" href="platform.html" data-i18n="tech.cta.cta2">查看产品矩阵</a>
-        </p>
-      </section>
+
     </main>
 
     <footer class="site-footer">
@@ -224,19 +127,21 @@
         <div class="footer-brand">
           <span class="footer-mark" aria-hidden="true"></span>
           <p class="footer-name" data-i18n="footer.name">合肥幻联科技有限公司</p>
-          <p class="footer-sub" data-i18n="footer.sub">幻联科技 · Huanlian Technology</p>
+          <p class="footer-sub" data-i18n="footer.sub">生命数字化探索 | 植入式脑机接口系统研发 | 神经科学研究服务</p>
         </div>
         <div class="footer-links">
           <p class="footer-h" data-i18n="footer.h.site">站点</p>
           <a href="index.html" data-i18n="nav.home">首页</a>
+          <a href="platform.html" data-i18n="nav.platform">产品与服务</a>
           <a href="technology.html" data-i18n="nav.tech">核心技术</a>
-          <a href="platform.html" data-i18n="nav.platform">产品</a>
           <a href="apps.html" data-i18n="nav.apps">应用场景</a>
+          <a href="partners.html" data-i18n="nav.partners">科研合作</a>
         </div>
         <div class="footer-links">
           <p class="footer-h" data-i18n="footer.h.more">更多</p>
-          <a href="partners.html" data-i18n="nav.partners">科研合作</a>
           <a href="shop.html" data-i18n="nav.shop">采购商城</a>
+          <a href="news.html" data-i18n="nav.news">新闻动态</a>
+          <a href="about.html" data-i18n="nav.about">关于我们</a>
           <a href="contact.html" data-i18n="nav.contact">联系我们</a>
           <a href="assets/docs/huanlian-product-manual.pdf" target="_blank" rel="noopener" data-i18n="footer.h.pdf">产品手册 PDF</a>
         </div>

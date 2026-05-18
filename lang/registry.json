@@ -2,7 +2,7 @@
   "_comment": "Adding a new language: drop a new lang/<code>.json next to this file, then add an entry below. The runtime auto-discovers from this registry.",
   "default": "zh",
   "languages": [
-    { "code": "zh", "label": "中", "htmlLang": "zh-CN", "ariaLabel": "切换中文", "switchLabelTo": "EN" },
-    { "code": "en", "label": "EN", "htmlLang": "en",    "ariaLabel": "Switch to English", "switchLabelTo": "中" }
+    { "code": "zh", "label": "ZH", "htmlLang": "zh-CN", "ariaLabel": "Switch to Chinese", "switchLabelTo": "EN" },
+    { "code": "en", "label": "EN", "htmlLang": "en",    "ariaLabel": "Switch to English", "switchLabelTo": "ZH" }
   ]
 }

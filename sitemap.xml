@@ -3,30 +3,58 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://huanlian-site.pages.dev/</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-05-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://huanlian-site.pages.dev/?lang=zh"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://huanlian-site.pages.dev/?lang=en"/>
   </url>
   <url>
-    <loc>https://huanlian-site.pages.dev/technology</loc>
-    <lastmod>2026-05-09</lastmod>
+    <loc>https://huanlian-site.pages.dev/platform</loc>
+    <lastmod>2026-05-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://huanlian-site.pages.dev/technology?lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://huanlian-site.pages.dev/technology?lang=en"/>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://huanlian-site.pages.dev/platform</loc>
-    <lastmod>2026-05-09</lastmod>
+    <loc>https://huanlian-site.pages.dev/technology</loc>
+    <lastmod>2026-05-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://huanlian-site.pages.dev/apps</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://huanlian-site.pages.dev/partners</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://huanlian-site.pages.dev/shop</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-05-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://huanlian-site.pages.dev/news</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://huanlian-site.pages.dev/about</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://huanlian-site.pages.dev/contact</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

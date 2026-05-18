@@ -39,7 +39,7 @@
   </script>
 </head>
   <body data-page="partners">
-    <a class="skip-to-content" href="#main-content">跳到正文 / Skip to content</a>
+    <a class="skip-to-content" href="#main-content">Skip to content</a>
     <header class="site-header" data-site-header>
       <a class="brand" href="index.html" aria-label="Huanlian Technology">
         <span class="brand-mark" aria-hidden="true"></span>
@@ -54,100 +54,89 @@
       </button>
             <nav class="primary-nav" id="primary-nav" data-primary-nav>
         <a href="index.html" data-nav-link="home" data-i18n="nav.home">首页</a>
+        <a href="platform.html" data-nav-link="platform" data-i18n="nav.platform">产品与服务</a>
         <a href="technology.html" data-nav-link="technology" data-i18n="nav.tech">核心技术</a>
-        <a href="platform.html" data-nav-link="platform" data-i18n="nav.platform">产品</a>
         <a href="apps.html" data-nav-link="apps" data-i18n="nav.apps">应用场景</a>
         <a href="partners.html" data-nav-link="partners" data-i18n="nav.partners">科研合作</a>
         <a href="shop.html" data-nav-link="shop" data-i18n="nav.shop">采购商城</a>
+        <a href="news.html" data-nav-link="news" data-i18n="nav.news">新闻动态</a>
+        <a href="about.html" data-nav-link="about" data-i18n="nav.about">关于我们</a>
         <a href="contact.html" data-nav-link="contact" data-i18n="nav.contact">联系我们</a>
         <button type="button" class="lang-switch" data-lang-switch>EN</button>
       </nav>
     </header>
 
     <main id="main-content">
-      <section class="page-hero partners-hero" aria-labelledby="partners-title">
-        <div>
-          <p class="eyebrow" data-i18n="partners.hero.kicker">合作伙伴 · Partners</p>
-          <h1 id="partners-title" data-i18n="partners.hero.title">合作矩阵</h1>
-          <p data-i18n="partners.hero.lede">研究型大学、医学院校、三甲医院 · 已服务海内外多家科研机构；与安徽省立医院联合打造全国标杆性脑机智能数字化康复中心。</p>
+      <section class="page-hero partners-hero partners-hero-rich" id="coop-modes" aria-labelledby="partners-title">
+        <div class="partners-hero-bg" aria-hidden="true">
+          <img src="assets/images/hero-bg-partners.png" alt="" loading="eager">
         </div>
-        <figure class="tech-hero-media">
-          <img src="assets/images/conference.png" alt="医学会议室" loading="lazy">
-          <figcaption data-i18n="partners.hero.cap">科研合作网络</figcaption>
-        </figure>
+        <div class="page-hero-copy">
+          <h1 id="partners-title" data-i18n="partners.hero.title">科研合作</h1>
+          <p class="page-hero-lede" data-i18n="partners.modes.sub">携手共进，推动脑机接口技术转化与应用。六种合作模式，一对一对接。</p>
+          <ul class="coop-modes-grid">
+            <li><span class="mode-num">01</span><h3 data-i18n="partners.modes.m1Title">联合研发</h3><p data-i18n="partners.modes.m1Body">共同申报课题、共研新技术、共享知识产权。</p></li>
+            <li><span class="mode-num">02</span><h3 data-i18n="partners.modes.m2Title">设备采购</h3><p data-i18n="partners.modes.m2Body">采购幻联科研/临床设备，享受专业技术支持。</p></li>
+            <li><span class="mode-num">03</span><h3 data-i18n="partners.modes.m3Title">定制开发</h3><p data-i18n="partners.modes.m3Body">按需定制电极、系统、算法，满足特定实验需求。</p></li>
+            <li><span class="mode-num">04</span><h3 data-i18n="partners.modes.m4Title">课题合作</h3><p data-i18n="partners.modes.m4Body">联合开展神经科学研究，共同发表论文。</p></li>
+            <li><span class="mode-num">05</span><h3 data-i18n="partners.modes.m5Title">联合申报项目</h3><p data-i18n="partners.modes.m5Body">共同申报国家/省市级科研项目，获取政策支持。</p></li>
+            <li><span class="mode-num">06</span><h3 data-i18n="partners.modes.m6Title">科研支持</h3><p data-i18n="partners.modes.m6Body">论文发表 · 数据服务 · 技术支持 · 动物模型构建。</p></li>
+          </ul>
+        </div>
       </section>
 
-      <section class="section-band evidence-band" id="partners" aria-labelledby="partners-list-title">
+
+      <section class="section-band coop-flow-band" id="coop-flow" aria-labelledby="coop-flow-title">
         <div class="section-heading">
-          <p class="eyebrow" data-i18n="partners.list.kicker">合作矩阵</p>
-          <h2 id="partners-list-title" data-i18n="partners.list.title">合作高校与医院</h2>
-          <p data-i18n="partners.list.sub">已服务于海内外多家科研机构，与三甲医院共建临床合作。</p>
+          <p class="eyebrow" data-i18n="partners.flow.kicker">合作流程</p>
+          <h2 id="coop-flow-title" data-i18n="partners.flow.title">四步走通合作链路</h2>
         </div>
-        <div class="evidence-grid">
-          <article>
-            <h3 data-i18n="partners.list.t1">研究型大学</h3>
-            <p data-i18n="partners.list.p1">中国科学技术大学 · 西安交通大学 · 西安电子科技大学 · 陕西中医药大学</p>
-          </article>
-          <article>
-            <h3 data-i18n="partners.list.t2">医学院校</h3>
-            <p data-i18n="partners.list.p2">皖南医科大学 · 安徽医科大学 · 首都医科大学 · 南方医科大学</p>
-          </article>
-          <article>
-            <h3 data-i18n="partners.list.t3">三甲医院</h3>
-            <p data-i18n="partners.list.p3">安徽医科大学第一附属医院 · 合肥市第四人民医院 · 北京天坛医院安徽医院 · 南方医科大学珠江医院 · 湛江中心人民医院</p>
-          </article>
-          <article>
-            <h3 data-i18n="partners.list.t4">战略共建</h3>
-            <p data-i18n="partners.list.p4">安徽省立医院 — 联合打造全国标杆性脑机智能数字化康复中心。</p>
-          </article>
-        </div>
+        <ol class="coop-flow-steps">
+          <li><span class="coop-flow-step">01</span><h3 data-i18n="partners.flow.s1">提交申请</h3></li>
+          <li><span class="coop-flow-step">02</span><h3 data-i18n="partners.flow.s2">需求沟通</h3></li>
+          <li><span class="coop-flow-step">03</span><h3 data-i18n="partners.flow.s3">方案确认</h3></li>
+          <li><span class="coop-flow-step">04</span><h3 data-i18n="partners.flow.s4">签约启动</h3></li>
+        </ol>
       </section>
 
-      <section class="section-band partners-stats-band" aria-labelledby="partners-stats-title">
-        <div class="section-heading align-left">
-          <p class="eyebrow" data-i18n="partners.stats.kicker">合作 · 数据</p>
-          <h2 id="partners-stats-title" data-i18n="partners.stats.title">已落地的合作矩阵</h2>
+      <section class="section-band coop-form-band" id="coop-form" aria-labelledby="coop-form-title">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="partners.form.kicker">合作邀请</p>
+          <h2 id="coop-form-title" data-i18n="partners.form.title">合作申请</h2>
+          <p data-i18n="partners.form.sub">我们将在 3 个工作日内与您联系。</p>
         </div>
-        <div class="hero-proof partners-stats">
-          <div>
-            <span class="metric-value">10+</span>
-            <span class="metric-label" data-i18n="partners.stats.m1">高校与医院科研合作</span>
+        <form class="coop-form" data-mailto-form data-mailto-to="AstroMind@xnzlsmart.cn" data-mailto-subject="科研合作申请">
+          <div class="form-row">
+            <label for="coop-org" data-i18n="partners.form.orgLabel">机构名称 *</label>
+            <input type="text" id="coop-org" name="org" required data-i18n-attr="placeholder:partners.form.orgPlaceholder" placeholder="请输入您的机构/单位全称">
           </div>
-          <div>
-            <span class="metric-value">5</span>
-            <span class="metric-label" data-i18n="partners.stats.m2">三甲医院临床合作</span>
+          <div class="form-row">
+            <label for="coop-intent" data-i18n="partners.form.intentLabel">合作意向 *</label>
+            <select id="coop-intent" name="intent" required>
+              <option value="" data-i18n="partners.form.intentDefault">请选择</option>
+              <option value="联合研发" data-i18n="partners.form.intent1">联合研发</option>
+              <option value="设备采购" data-i18n="partners.form.intent2">设备采购</option>
+              <option value="定制开发" data-i18n="partners.form.intent3">定制开发</option>
+              <option value="课题合作" data-i18n="partners.form.intent4">课题合作</option>
+              <option value="联合申报项目" data-i18n="partners.form.intent5">联合申报项目</option>
+            </select>
           </div>
-          <div>
-            <span class="metric-value">4</span>
-            <span class="metric-label" data-i18n="partners.stats.m3">研究型大学 / 医学院校</span>
+          <div class="form-row">
+            <label for="coop-name" data-i18n="partners.form.nameLabel">联系人 *</label>
+            <input type="text" id="coop-name" name="name" required data-i18n-attr="placeholder:partners.form.namePlaceholder" placeholder="请输入联系人姓名">
           </div>
-          <div>
-            <span class="metric-value">3</span>
-            <span class="metric-label" data-i18n="partners.stats.m4">年学术合作框架</span>
+          <div class="form-row">
+            <label for="coop-contact" data-i18n="partners.form.contactLabel">联系方式 *</label>
+            <input type="text" id="coop-contact" name="contact" required data-i18n-attr="placeholder:partners.form.contactPlaceholder" placeholder="请输入手机号或邮箱">
           </div>
-        </div>
+          <div class="form-row form-actions">
+            <button type="submit" class="button button-primary" data-i18n="partners.form.submit">提交申请</button>
+            <p class="form-note" data-i18n="partners.form.note">我们将在 3 个工作日内与您联系</p>
+          </div>
+        </form>
       </section>
 
-      <section class="cinematic-band" data-align="bottom-left" aria-labelledby="partners-cine-title">
-        <img class="cinematic-bg" src="assets/images/bci-corridor.png" alt="医学研究中心走廊" loading="lazy">
-        <div class="cinematic-copy">
-          <span class="cinematic-eyebrow" data-i18n="partners.cine.eyebrow">Strategic · 安徽省立医院</span>
-          <h2 id="partners-cine-title" data-i18n="partners.cine.title">全国标杆性脑机智能数字化康复中心</h2>
-          <p data-i18n="partners.cine.body">联合安徽省立医院共建康复中心，覆盖上下肢运动、手功能、认知、语言、吞咽全套康复链路与设备。</p>
-        </div>
-      </section>
 
-      <section class="contact-band" aria-labelledby="partners-cta-title">
-        <div>
-          <p class="eyebrow" data-i18n="partners.cta.kicker">合作邀请</p>
-          <h2 id="partners-cta-title" data-i18n="partners.cta.title">想成为下一家合作单位？</h2>
-          <p data-i18n="partners.cta.lede">告诉我们你的科室或实验室方向，我们会对接合适的合作模式与三年科研合作计划。</p>
-        </div>
-        <p class="launch-actions">
-          <a class="button button-primary" href="mailto:AstroMind@xnzlsmart.cn?subject=Partnership%20Inquiry" data-i18n="partners.cta.cta1">提交合作意向</a>
-          <a class="button button-secondary" href="technology.html" data-i18n="partners.cta.cta2">查看技术能力</a>
-        </p>
-      </section>
     </main>
 
     <footer class="site-footer">
@@ -155,19 +144,21 @@
         <div class="footer-brand">
           <span class="footer-mark" aria-hidden="true"></span>
           <p class="footer-name" data-i18n="footer.name">合肥幻联科技有限公司</p>
-          <p class="footer-sub" data-i18n="footer.sub">幻联科技 · Huanlian Technology</p>
+          <p class="footer-sub" data-i18n="footer.sub">生命数字化探索 | 植入式脑机接口系统研发 | 神经科学研究服务</p>
         </div>
         <div class="footer-links">
           <p class="footer-h" data-i18n="footer.h.site">站点</p>
           <a href="index.html" data-i18n="nav.home">首页</a>
+          <a href="platform.html" data-i18n="nav.platform">产品与服务</a>
           <a href="technology.html" data-i18n="nav.tech">核心技术</a>
-          <a href="platform.html" data-i18n="nav.platform">产品</a>
           <a href="apps.html" data-i18n="nav.apps">应用场景</a>
+          <a href="partners.html" data-i18n="nav.partners">科研合作</a>
         </div>
         <div class="footer-links">
           <p class="footer-h" data-i18n="footer.h.more">更多</p>
-          <a href="partners.html" data-i18n="nav.partners">科研合作</a>
           <a href="shop.html" data-i18n="nav.shop">采购商城</a>
+          <a href="news.html" data-i18n="nav.news">新闻动态</a>
+          <a href="about.html" data-i18n="nav.about">关于我们</a>
           <a href="contact.html" data-i18n="nav.contact">联系我们</a>
           <a href="assets/docs/huanlian-product-manual.pdf" target="_blank" rel="noopener" data-i18n="footer.h.pdf">产品手册 PDF</a>
         </div>

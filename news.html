@@ -3,21 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title data-i18n="meta.appsTitle">应用方向 | 幻联科技 · 合肥幻联科技</title>
-    <meta name="description" content="幻联科技应用：神经科学基础研究、临床转化与脑控外设、康复专科病房、院外健康管理。" data-i18n-attr="content:meta.appsDesc">
+    <title data-i18n="meta.newsTitle">新闻动态 | 幻联科技 · 合肥幻联科技</title>
+    <meta name="description" content="幻联科技新闻动态：公司动态、行业资讯、学术合作，关注脑机接口前沿进展。" data-i18n-attr="content:meta.newsDesc">
     <link rel="alternate" hreflang="en" href="?lang=en">
     <link rel="alternate" hreflang="zh-CN" href="?lang=zh">
     <link rel="stylesheet" href="styles/huanlian.css">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="alternate icon" type="image/jpeg" href="favicon.jpg">
-    <link rel="canonical" href="https://huanlian-site.pages.dev/apps">
+    <link rel="canonical" href="https://huanlian-site.pages.dev/news">
     <meta name="theme-color" content="#0b0c0b">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="幻联科技 · Huanlian Technology">
-    <meta property="og:title" content="应用方向 | 幻联科技 · 合肥幻联科技">
-    <meta property="og:description" content="从基础科研到院外日常，同一套硬件 + 软件按场景配置。">
-    <meta property="og:url" content="https://huanlian-site.pages.dev/apps">
-    <meta property="og:image" content="https://huanlian-site.pages.dev/assets/images/lab-night.png">
+    <meta property="og:title" content="新闻动态 | 幻联科技">
+    <meta property="og:description" content="公司动态、行业资讯、学术合作。">
+    <meta property="og:url" content="https://huanlian-site.pages.dev/news">
+    <meta property="og:image" content="https://huanlian-site.pages.dev/assets/images/conference.png">
     <meta name="twitter:card" content="summary_large_image">
     <script>
     (function () {
@@ -37,7 +36,7 @@
     })();
   </script>
 </head>
-  <body data-page="apps">
+  <body data-page="news">
     <a class="skip-to-content" href="#main-content">Skip to content</a>
     <header class="site-header" data-site-header>
       <a class="brand" href="index.html" aria-label="Huanlian Technology">
@@ -51,7 +50,7 @@
         <span></span><span></span><span></span>
         <span class="sr-only" data-i18n="nav.toggle">打开导航</span>
       </button>
-      <nav class="primary-nav" id="primary-nav" data-primary-nav>
+            <nav class="primary-nav" id="primary-nav" data-primary-nav>
         <a href="index.html" data-nav-link="home" data-i18n="nav.home">首页</a>
         <a href="platform.html" data-nav-link="platform" data-i18n="nav.platform">产品与服务</a>
         <a href="technology.html" data-nav-link="technology" data-i18n="nav.tech">核心技术</a>
@@ -66,53 +65,64 @@
     </header>
 
     <main id="main-content">
-      <section class="page-hero apps-hero apps-hero-rich" id="applications" aria-labelledby="apps-title">
-        <div class="apps-hero-bg" aria-hidden="true">
-          <img src="assets/images/lab-night.png" alt="" loading="eager">
+      <section class="page-hero news-hero news-hero-rich" id="news-list" aria-labelledby="news-title">
+        <div class="news-hero-bg" aria-hidden="true">
+          <img src="assets/images/hero-bg-news.png" alt="" loading="eager">
         </div>
         <div class="page-hero-copy">
-          <p class="eyebrow" data-i18n="apps.hero.kicker">应用方向 · Applications</p>
-          <h1 id="apps-title" data-i18n="apps.hero.title">四个场景</h1>
-          <p class="page-hero-lede" data-i18n="apps.hero.lede">从基础科研到院外日常 · 同一套硬件 + 软件，按场景配置就能跨越实验室、临床、病房与日常生活。</p>
-          <ul class="overview-grid-rich" aria-label="Application scenarios">
-            <li><span class="card-num">01</span><h3 data-i18n="apps.list.t1">神经科学基础研究</h3><p data-i18n="apps.list.p1">多通道在体电生理、光遗传联用、长期稳定记录与脑区精准定位，支持神经环路与编码研究。</p></li>
-            <li><span class="card-num">02</span><h3 data-i18n="apps.list.t2">临床转化与脑控外设</h3><p data-i18n="apps.list.p2">SpikeLink 全植入无线 + 脑控外骨骼，运动意图识别、闭环康复与神经调控完整链路。</p></li>
-            <li><span class="card-num">03</span><h3 data-i18n="apps.list.t3">康复专科病房</h3><p data-i18n="apps.list.p3">联合安徽省立医院打造数字化康复中心，覆盖上下肢/手功能/认知/语言/吞咽。</p></li>
-            <li><span class="card-num">04</span><h3 data-i18n="apps.list.t4">院外健康管理</h3><p data-i18n="apps.list.p4">脑电帽、情绪分析仪器、脑机接口眼镜等可穿戴设备，把脑机能力延伸到日常生活场景。</p></li>
-          </ul>
+          <h1 id="news-title" data-i18n="news.hero.title">新闻动态</h1>
+          <p class="page-hero-lede" data-i18n="news.hero.lede">关注幻联科技，了解脑机接口前沿进展。</p>
+
+        <div class="news-filters" role="tablist" aria-label="新闻分类">
+          <button type="button" class="news-filter is-active" data-news-filter="all" data-i18n="news.filter.all">全部</button>
+          <button type="button" class="news-filter" data-news-filter="company" data-i18n="news.filter.company">公司动态</button>
+          <button type="button" class="news-filter" data-news-filter="industry" data-i18n="news.filter.industry">行业资讯</button>
+          <button type="button" class="news-filter" data-news-filter="academic" data-i18n="news.filter.academic">学术合作</button>
+        </div>
+
+        <ul class="news-list">
+          <li class="news-item" data-news-cat="company">
+            <span class="news-date" data-i18n="news.item1.date">2026.05</span>
+            <span class="news-cat" data-i18n="news.item1.cat">公司动态</span>
+            <h3 class="news-title" data-i18n="news.item1.title">幻联科技官网上线 2026 春季版</h3>
+            <p class="news-body" data-i18n="news.item1.body">完成 SpikeLink 产品页、技术架构与商城询价单功能，全面对接合肥幻联科技品牌。</p>
+          </li>
+          <li class="news-item" data-news-cat="industry">
+            <span class="news-date" data-i18n="news.item2.date">2026.05</span>
+            <span class="news-cat" data-i18n="news.item2.cat">行业资讯</span>
+            <h3 class="news-title" data-i18n="news.item2.title">安徽脑机接口产业联盟植入式 BCI 产品发布</h3>
+            <p class="news-body" data-i18n="news.item2.body">联盟联合发布植入式 BCI 系列产品，幻联科技 SpikeLink 系统亮相。</p>
+          </li>
+          <li class="news-item" data-news-cat="academic">
+            <span class="news-date" data-i18n="news.item3.date">2026.04</span>
+            <span class="news-cat" data-i18n="news.item3.cat">学术合作</span>
+            <h3 class="news-title" data-i18n="news.item3.title">与安徽省立医院共建康复中心</h3>
+            <p class="news-body" data-i18n="news.item3.body">联合打造全国标杆性脑机智能数字化康复中心，覆盖上下肢、手功能、认知、语言、吞咽全链路。</p>
+          </li>
+        </ul>
+
+        <p class="news-more">
+          <a class="button button-secondary" href="mailto:AstroMind@xnzlsmart.cn?subject=News%20Subscribe" data-i18n="news.list.more">查看更多新闻 →</a>
+        </p>
         </div>
       </section>
 
-      <section class="cinematic-band" data-align="bottom-left" aria-labelledby="apps-research-title">
-        <video class="cinematic-bg" src="assets/media/lab-monitors.mp4" autoplay muted loop playsinline poster="assets/images/lab-night.png" aria-hidden="true"></video>
-        <div class="cinematic-copy">
-          <span class="cinematic-eyebrow" data-i18n="apps.cine1.eyebrow">Research · 神经科学</span>
-          <h2 id="apps-research-title" data-i18n="apps.cine1.title">从皮层电位到神经环路</h2>
-          <p data-i18n="apps.cine1.body">2048 通道高通量主机 + 全波段电极覆盖 Spike / LFP / ECoG，AI 分选与编码解析直接进入论文流程。</p>
-          <p class="cinematic-link"><a href="platform.html#panel-electrode" data-i18n="platform.overview.g2Cta">查看 →</a></p>
+      <section class="section-band media-band" id="media" aria-labelledby="media-title">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="news.media.kicker">媒体报道</p>
+          <h2 id="media-title" data-i18n="news.media.title">媒体报道</h2>
+          <p data-i18n="news.media.sub">主流科技媒体、行业平台、学术期刊对幻联科技的相关报道。</p>
         </div>
-      </section>
-
-      <section class="cinematic-band" data-align="bottom-right" aria-labelledby="apps-clinic-title">
-        <video class="cinematic-bg" src="assets/media/rehab-motion.mp4" autoplay muted loop playsinline poster="assets/images/rehab-exo.png" aria-hidden="true"></video>
-        <div class="cinematic-copy">
-          <span class="cinematic-eyebrow" data-i18n="apps.cine2.eyebrow">Clinic · 临床康复</span>
-          <h2 id="apps-clinic-title" data-i18n="apps.cine2.title">让运动意图重新到达肢体</h2>
-          <p data-i18n="apps.cine2.body">SpikeLink 全植入 + 脑控外骨骼 + 闭环康复算法，联合安徽省立医院构建标杆数字化康复中心。</p>
-          <p class="cinematic-link"><a href="shop.html#shop-rehab" data-i18n="shop.overview.c2Cta">查看 →</a></p>
-        </div>
-      </section>
-
-      <section class="contact-band" aria-labelledby="apps-cta-title">
-        <div>
-          <p class="eyebrow" data-i18n="apps.cta.kicker">下一步</p>
-          <h2 id="apps-cta-title" data-i18n="apps.cta.title">告诉我们你的应用场景</h2>
-          <p data-i18n="apps.cta.lede">实验室 / 临床 / 病房 / 院外，我们按场景给出配置建议与询价。</p>
-        </div>
-        <div class="launch-actions">
-          <a class="button button-primary" href="contact.html" data-i18n="apps.cta.cta1">发送场景需求</a>
-          <a class="button button-secondary" href="platform.html" data-i18n="apps.cta.cta2">查看产品矩阵</a>
-        </div>
+        <ul class="media-list">
+          <li class="media-item">
+            <span class="media-name" data-i18n="news.media.m1Name">媒体名称（预留）</span>
+            <span class="media-title" data-i18n="news.media.m1Title">文章名称（预留）</span>
+          </li>
+          <li class="media-item">
+            <span class="media-name" data-i18n="news.media.m2Name">媒体名称（预留）</span>
+            <span class="media-title" data-i18n="news.media.m2Title">文章名称（预留）</span>
+          </li>
+        </ul>
       </section>
     </main>
 

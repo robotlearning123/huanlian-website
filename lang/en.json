@@ -13,7 +13,11 @@
     "partnersTitle": "Partners | Huanlian Tech · Hefei Huanlian",
     "partnersDesc": "Research universities, medical schools, top hospitals, and the Anhui Provincial Hospital strategic partnership.",
     "contactTitle": "Contact | Huanlian Tech · Hefei Huanlian",
-    "contactDesc": "Tel 0551-65250690 · Email AstroMind@xnzlsmart.cn · Bailee Center South Tower 318, 888 Qianshan Rd, Hefei."
+    "contactDesc": "Tel 0551-65250690 · Email AstroMind@xnzlsmart.cn · Bailee Center South Tower 318, 888 Qianshan Rd, Hefei.",
+    "newsTitle": "News | Huanlian Tech · Hefei Huanlian",
+    "newsDesc": "Huanlian Tech news: company updates, industry insights, academic collaborations, BCI frontier.",
+    "aboutTitle": "About | Huanlian Tech · Hefei Huanlian",
+    "aboutDesc": "Hefei Huanlian Technology — focused on full-stack implantable BCI R&D, core member of the Anhui BCI Industry Alliance."
   },
   "brand": {
     "name": "Huanlian Tech",
@@ -23,17 +27,19 @@
   },
   "nav": {
     "home": "Home",
+    "platform": "Products & Services",
     "tech": "Core Tech",
-    "platform": "Products",
+    "partners": "Research Partners",
     "shop": "Shop",
+    "news": "News",
     "apps": "Applications",
-    "partners": "Research",
+    "about": "About",
     "contact": "Contact",
     "toggle": "Toggle navigation"
   },
   "footer": {
     "name": "Hefei Huanlian Technology Co., Ltd.",
-    "sub": "Pioneering the Future — 以脑引智 · 联动未来",
+    "sub": "Life-digitization explorers | Implantable BCI systems R&D | Neuroscience research services",
     "h": {
       "site": "Site",
       "more": "More",
@@ -46,10 +52,10 @@
   "home": {
     "hero": {
       "eyebrow": "Hefei Huanlian Technology · Implantable BCI System Solutions",
-      "title": "Huanlian Tech",
-      "lede": "Vertically-integrated electrode and acquisition technology — powering neuroscience research and clinical translation.",
-      "cta1": "View Product Matrix",
-      "cta2": "Explore Tech Roadmap",
+      "title": "Decoding neural signals, reshaping life's possibilities",
+      "lede": "From electrodes to algorithms — a full-stack BCI solution for neuroscience research, clinical rehabilitation, and intelligent living.",
+      "cta1": "Explore Products",
+      "cta2": "Learn the Tech",
       "metric1": "NeuroBox high-throughput neural acquisition",
       "metric2": "High-density silicon implantable arrays",
       "metric3": "Research · Clinical · Rehab — full lifecycle",
@@ -144,21 +150,30 @@
       "h3": "0551-65250690 · AstroMind@xnzlsmart.cn",
       "p3": "Phone, email, address, inquiry template — all in one stop →"
     },
-    "scroll": "Scroll ↓",
+    "scroll": "↓ Scroll to explore",
     "cine1": {
-      "eyebrow": "MICHIGAN · Implant",
-      "title": "Hospital-grade BCI on a surgical tray",
-      "body": "SpikeLink wireless full-implant + Michigan silicon probe + gold contacts. 32–256 channels — from intra-op placement to long-term stable recording."
+      "eyebrow": "SPIKELINK · Core technology",
+      "title": "SpikeLink",
+      "sub": "Implantable BCI core technology solution",
+      "l1": "Hermetic packaging",
+      "l2": "Wireless data & wireless power",
+      "l3": "Recording & processing chips",
+      "l4": "Flexible electrode interface",
+      "cta": "View full technical detail →"
     },
     "cine2": {
-      "eyebrow": "NEUROBOX · Acquisition",
-      "title": "High-throughput neural signals, live on screen",
-      "body": "NeuroBox high-throughput neural signal acquisition supports 2048-channel synchronous capture — real-time recording and transmission of multi-channel raw neural signals, providing a complete, reliable data foundation for downstream analysis and decoding."
+      "eyebrow": "NEUROBOX · Research solution",
+      "title": "Research solution",
+      "tag": "Up to 2048 channels, real-time",
+      "body": "NeuroBox high-throughput neural signal acquisition supports 2048-channel synchronous capture — real-time recording and transmission of multi-channel raw neural signals, providing a complete, reliable data foundation for downstream analysis and decoding.",
+      "cta": "View all research products →"
     },
     "cine3": {
-      "eyebrow": "REHAB · Rehabilitation",
-      "title": "Bringing motor intent back to the limb",
-      "body": "Brain-controlled exoskeleton + closed-loop rehab algorithms. Joint with Anhui Provincial Hospital — flagship digital rehab center."
+      "eyebrow": "REHAB · Clinical & rehab",
+      "title": "Clinical & rehabilitation solution",
+      "tag": "Brain-controlled exoskeleton, assisted walking",
+      "body": "Brain-controlled exoskeleton + closed-loop rehab algorithms. Joint with Anhui Provincial Hospital — flagship digital rehab center.",
+      "cta": "View all rehab products →"
     },
     "cineFab": {
       "eyebrow": "CLEANROOM · Fab",
@@ -179,14 +194,42 @@
   "tech": {
     "hero": {
       "kicker": "Technology",
-      "title": "Vertically integrated",
+      "title": "Core Technology",
       "lede": "Implantable BCI tech roadmap — biocompatible electrodes, low-noise high-throughput acquisition, AI-guided implantation and real-time signal decoding. End-to-end in-house.",
       "cap": "NeuroBox Lab"
     },
     "core": {
       "kicker": "Core Tech",
-      "title": "Three core capabilities",
-      "lede": "Core team across materials science, micro-nano fabrication, chip design, neuroelectrophysiology, and algorithms — with mastered tech in dissolvable neural materials, silicon-probe nanofabrication, and high-frequency signal acquisition. The foundation for high-throughput implantable BCI."
+      "title": "Three technology pillars",
+      "lede": "Three pillars building a full-stack BCI capability."
+    },
+    "pillars": {
+      "kicker": "Pillars",
+      "title": "Three technology pillars",
+      "lede": "From materials to chips to algorithms — a full-stack BCI capability.",
+      "p1Title": "Advanced materials & microfabrication",
+      "p1Body": "Microfabrication · dissolvable neural-interface materials · high-density electrode arrays",
+      "p2Title": "Chip design & system integration",
+      "p2Body": "Chip design · system integration · high-throughput acquisition · low-noise amplification",
+      "p3Title": "Algorithms & targeting",
+      "p3Body": "Software decoding · targeting · AI spike sorting · real-time neural decoding"
+    },
+    "detail": {
+      "kicker": "Tech detail",
+      "title": "Technology detail",
+      "lede": "Six directions covering the full chain from base materials to signal decoding.",
+      "d1Title": "Microfabrication",
+      "d1Body": "Silicon multi-channel microfabrication process — high density, customizable channels, high batch consistency.",
+      "d2Title": "Materials science",
+      "d2Body": "Dissolvable neural-interface materials — biocompatible, controllable degradation, reducing reoperation risk.",
+      "d3Title": "Chip design",
+      "d3Body": "Low-noise, low-power, multi-channel parallel acquisition chip with 16-bit ADC resolution.",
+      "d4Title": "System integration",
+      "d4Body": "Co-designed hardware and software, modular extensible architecture, up to 2048 channels.",
+      "d5Title": "Targeting",
+      "d5Body": "Multi-arm brain-atlas targeting system, sub-millimeter implantation precision, coordinated multi-arm operation.",
+      "d6Title": "Software decoding",
+      "d6Body": "High-frequency neural-signal real-time decoding, AI spike sorting, low-latency online analysis."
     },
     "stack": {
       "kicker": "Stack",
@@ -239,9 +282,28 @@
     }
   },
   "platform": {
+    "overview": {
+      "kicker": "Products & Services",
+      "title": "Products & Services",
+      "lede": "Full coverage of research, clinical, and consumer scenarios — from electrodes to algorithms.",
+      "g1Title": "Medical", "g1Body": "SpikeLink — wireless full-implant BCI", "g1Cta": "View →",
+      "g2Title": "Research", "g2Body": "Electrodes · acquisition · analysis software", "g2Cta": "View →",
+      "g3Title": "Rehab", "g3Body": "EEG cap · exoskeleton · stim systems", "g3Cta": "View →",
+      "g4Title": "Consumer", "g4Body": "Glasses · headbands · heart-brain trainer", "g4Cta": "View →",
+      "g5Title": "Custom services", "g5Body": "Bespoke design · end-to-end support", "g5Cta": "View →"
+    },
+    "custom": {
+      "kicker": "Custom services",
+      "title": "Bespoke design, end-to-end support",
+      "lede": "For: university labs · research institutes · hospital research centers · enterprise R&D.",
+      "s1Title": "Custom electrode design", "s1Body": "Site geometry, channel count, shank length, array layout, packaging — all to spec.", "s1Cta": "Contact →",
+      "s2Title": "Custom system config", "s2Body": "Channel count, sampling rate, input range — flexibly configured.", "s2Cta": "Contact →",
+      "s3Title": "Custom algorithm dev", "s3Body": "Bespoke analysis algorithms for specific experimental needs.", "s3Cta": "Contact →",
+      "s4Title": "Experiment design", "s4Body": "Assistance with in-vivo and in-vitro experimental design.", "s4Cta": "Contact →"
+    },
     "hero": {
       "kicker": "Product · Matrix",
-      "title": "Device Stack",
+      "title": "Products & Services",
       "lede": "Medical + research full stack: SpikeLink wireless implant, NeuroBox 2048-ch acquisition, Michigan / ECoG / microwire electrodes, MPM targeting, HD-MEA in-vitro arrays.",
       "cap": "SpikeLink · NeuroBox · MPM"
     },
@@ -255,6 +317,14 @@
       "tab4": "Software & In-Vitro",
       "p1Title": "SpikeLink wireless full-implant BCI",
       "p1Body": "Huanlian's medical-grade flagship — a wireless full-implant BCI for clinical use. Pairs with NeuroBox / electrodes / software to close the loop across lab, clinic, and at-home. See the Anhui BCI Alliance launch PDF for technical specs.",
+      "p1Feat1Title": "Hermetic packaging",
+      "p1Feat1Body": "Ceramic/metal biocompatible encapsulation, meets long-term implant sealing requirements.",
+      "p1Feat2Title": "Wireless data & wireless power",
+      "p1Feat2Body": "Integrated wireless data and power coils, with a microbattery for non-invasive recharging and real-time transmission.",
+      "p1Feat3Title": "Recording & processing chips",
+      "p1Feat3Body": "In-house chips supporting high-fidelity neural recording and precise electrical stimulation.",
+      "p1Feat4Title": "Flexible electrode interface",
+      "p1Feat4Body": "High-compliance flexible material couples precisely to neural tissue, minimizing injury.",
       "p2Title": "Electrode series",
       "p2Body": "Michigan silicon (32–256 ch, ultra-thin shanks, optogenetics-compatible) ｜ ECoG flexible cortical (long-term LFP tracking, multi-region observation) ｜ Microwire (PEG-encapsulated precise insertion, 2–14 mm exposure, Spike/LFP + microstimulation).",
       "p3Title": "Acquisition & targeting",
@@ -305,6 +375,29 @@
       "cta3b": "View 3 items",
       "cta4": "Request software demo",
       "cta4b": "View 3 items"
+    },
+    "rehab": {
+      "kicker": "Rehab",
+      "title": "BCI rehab · neuromodulation",
+      "lede": "Intent-driven recovery for motor and cognitive function.",
+      "subBci": "BCI rehabilitation",
+      "subNeuro": "Neuromodulation",
+      "r1Title": "EEG cap", "r1Body": "Dry/wet electrodes, quick-don, clinical + research.", "r1Cta": "Quote →",
+      "r2Title": "Cognitive rehab system", "r2Body": "EEG-based cognitive assessment and training — stroke, dementia, etc.", "r2Cta": "Quote →",
+      "r3Title": "Hand-gesture rehab", "r3Body": "Intent-driven hand-function recovery for hemiplegic patients.", "r3Cta": "Quote →",
+      "r4Title": "Upper/lower-limb rehab", "r4Body": "Motor-imagery triggered stim + exoskeleton, promoting plasticity.", "r4Cta": "Quote →",
+      "r5Title": "Exoskeleton", "r5Body": "Brain-controlled exo for assisted walking and at-home rehab.", "r5Cta": "Quote →",
+      "n1Title": "tDCS", "n1Body": "Non-invasive modulation — low-current tuning of cortical excitability.", "n1Cta": "Quote →",
+      "n2Title": "TMS", "n2Body": "Pulsed magnetic field penetrates skull for targeted brain-region stimulation.", "n2Cta": "Quote →",
+      "n3Title": "Temporal interference stim", "n3Body": "Multi-channel high-frequency interference for non-invasive deep-brain focal stimulation.", "n3Cta": "Quote →"
+    },
+    "consumer": {
+      "kicker": "Consumer",
+      "title": "BCI for everyday life",
+      "lede": "Lightweight, day-to-day BCI — from clinic to consumer.",
+      "c1Title": "BCI glasses", "c1Body": "Daily-wear attention monitor and interaction, lightweight design.", "c1Cta": "Buy now →",
+      "c2Title": "Heart-brain trainer", "c2Body": "Quantifies mood and cognition, guides heart-brain rehabilitation training.", "c2Cta": "Buy now →",
+      "c3Title": "Smart headband", "c3Body": "Lightweight EEG for sleep and focus training.", "c3Cta": "Buy now →"
     },
     "services": {
       "kicker": "Services",
@@ -392,7 +485,7 @@
   "partners": {
     "hero": {
       "kicker": "Partners",
-      "title": "Partner Matrix",
+      "title": "Research Partners",
       "lede": "Universities, medical schools, top hospitals · serving research institutions across China; co-building a flagship digital BCI rehab center with Anhui Provincial Hospital.",
       "cap": "Research network"
     },
@@ -428,6 +521,51 @@
       "m2": "Tier-3 hospital clinical partners",
       "m3": "Research universities / med schools",
       "m4": "Year collaboration framework"
+    },
+    "modes": {
+      "kicker": "Models",
+      "title": "Six partnership models · one-on-one onboarding",
+      "sub": "Driving translation and adoption of BCI technology, together.",
+      "m1Title": "Joint R&D",
+      "m1Body": "Co-author grants, co-develop technology, share IP.",
+      "m2Title": "Equipment procurement",
+      "m2Body": "Purchase Huanlian research/clinical equipment with professional technical support.",
+      "m3Title": "Custom development",
+      "m3Body": "Bespoke electrodes, systems, and algorithms for specific experimental needs.",
+      "m4Title": "Research collaboration",
+      "m4Body": "Joint neuroscience research and co-authored publications.",
+      "m5Title": "Joint grant applications",
+      "m5Body": "Co-apply for national/provincial/municipal projects with policy support.",
+      "m6Title": "Research support",
+      "m6Body": "Publications · data services · technical support · animal-model construction."
+    },
+    "flow": {
+      "kicker": "Process",
+      "title": "Four steps from inquiry to launch",
+      "s1": "Submit application",
+      "s2": "Requirements call",
+      "s3": "Confirm plan",
+      "s4": "Sign & launch"
+    },
+    "form": {
+      "kicker": "Apply",
+      "title": "Partnership application",
+      "sub": "We will reach out within 3 business days.",
+      "orgLabel": "Institution *",
+      "orgPlaceholder": "Full name of institution / unit",
+      "intentLabel": "Intent *",
+      "intentDefault": "Select one",
+      "intent1": "Joint R&D",
+      "intent2": "Equipment procurement",
+      "intent3": "Custom development",
+      "intent4": "Research collaboration",
+      "intent5": "Joint grant application",
+      "nameLabel": "Contact *",
+      "namePlaceholder": "Your name",
+      "contactLabel": "Phone / email *",
+      "contactPlaceholder": "Mobile or email",
+      "submit": "Submit application",
+      "note": "We will reach out within 3 business days"
     }
   },
   "contact": {
@@ -470,15 +608,107 @@
       "cta2": "Browse the shop"
     }
   },
+  "news": {
+    "hero": {
+      "kicker": "News",
+      "title": "News",
+      "lede": "Follow Huanlian Tech for the latest in implantable BCI.",
+      "cap": "Company · Industry · Academic"
+    },
+    "list": {
+      "kicker": "Latest",
+      "title": "Company · Industry · Academic",
+      "sub": "Reverse-chronological — recent company updates, industry headlines, and academic activity.",
+      "more": "More news →"
+    },
+    "filter": {
+      "all": "All",
+      "company": "Company",
+      "industry": "Industry",
+      "academic": "Academic"
+    },
+    "item1": {
+      "date": "2026.05",
+      "cat": "Company",
+      "title": "Huanlian Tech site relaunch · 2026 spring",
+      "body": "SpikeLink product page, tech architecture, and shop inquiry-list shipped — fully aligned with the Hefei Huanlian brand."
+    },
+    "item2": {
+      "date": "2026.05",
+      "cat": "Industry",
+      "title": "Anhui BCI Alliance · implantable BCI product launch",
+      "body": "Alliance unveils a series of implantable BCI products; SpikeLink featured in the launch."
+    },
+    "item3": {
+      "date": "2026.04",
+      "cat": "Academic",
+      "title": "Joint rehab center with Anhui Provincial Hospital",
+      "body": "Building a national-benchmark BCI-driven digital rehabilitation center — upper/lower limb, hand function, cognition, language, and swallowing."
+    },
+    "media": {
+      "kicker": "Press",
+      "title": "Press coverage",
+      "sub": "Mainstream tech media, industry platforms, and academic outlets covering Huanlian Tech.",
+      "m1Name": "Outlet (TBD)",
+      "m1Title": "Article (TBD)",
+      "m2Name": "Outlet (TBD)",
+      "m2Title": "Article (TBD)"
+    }
+  },
+  "about": {
+    "hero": {
+      "kicker": "About",
+      "title": "About us",
+      "lede": "Explorers of life's digitization · Core member of the Anhui BCI Industry Alliance",
+      "cap": "Hefei Huanlian Technology"
+    },
+    "company": {
+      "kicker": "Company",
+      "title": "Hefei Huanlian Technology Co., Ltd.",
+      "p1": "Hefei Huanlian Technology is a science-and-technology company focused on full-stack R&D and industrialization of implantable BCI, and a core member of the Anhui BCI Industry Alliance.",
+      "p2": "Under the mission of \"explorers of life's digitization,\" we work the foundational stack of implantable BCI — owning electrode-structure design, high-precision neural acquisition, and analysis-algorithm capabilities — from base materials and hardware to software, end-to-end and self-controlled.",
+      "p3": "Our product line spans multi-form implantable electrodes, high-throughput neural acquisition systems, and analysis software — fit for neuroscience research, clinical rehabilitation, and consumer-grade BCI, serving universities, hospitals, rehab centers, and individual users with end-to-end solutions.",
+      "p4": "Today the company has standing research partnerships with leading universities and Class-A tertiary hospitals, steadily advancing iteration and industrialization."
+    },
+    "honors": {
+      "kicker": "Honors",
+      "title": "Honors & qualifications",
+      "sub": "Trophies, plaques, and certificates (placeholder).",
+      "h1": "Honor (TBD)",
+      "h2": "Honor (TBD)",
+      "h3": "Honor (TBD)",
+      "h4": "Honor (TBD)"
+    },
+    "contact": {
+      "kicker": "Contact",
+      "title": "Contact info",
+      "telLabel": "Tel",
+      "emailLabel": "Email",
+      "addrLabel": "Address",
+      "addr": "Bailee Center South Tower 318, 888 Qianshan Rd, Shushan, Hefei, Anhui"
+    }
+  },
   "shop": {
     "hero": {
       "kicker": "Shop",
-      "title": "Equipment & Quote",
+      "title": "Shop",
       "lede": "Medical-grade and research-grade equipment ships through tailored quotes — configure to your protocol or clinical workflow.",
       "tag1": "Implantable",
       "tag2": "Research",
       "tag3": "Rehab",
       "tag4": "Lifestyle"
+    },
+    "overview": {
+      "lede": "Research consumables, rehabilitation equipment, and consumer products in one procurement flow.",
+      "c1Title": "Research consumables & instruments",
+      "c1Body": "Electrodes, acquisition systems, analysis software, and cables",
+      "c1Cta": "View →",
+      "c2Title": "Rehabilitation equipment",
+      "c2Body": "EEG caps, exoskeletons, stimulation systems, and rehab training systems",
+      "c2Cta": "View →",
+      "c3Title": "Consumer products",
+      "c3Body": "BCI glasses, headbands, and heart-brain trainers",
+      "c3Cta": "View →"
     },
     "section": {
       "implant": "Implant & Full-Implant",
@@ -492,7 +722,9 @@
       "rehab": "Rehabilitation Suite",
       "rehabKicker": "Rehab",
       "life": "Lifestyle BCI",
-      "lifeKicker": "Lifestyle"
+      "lifeKicker": "Lifestyle",
+      "research": "Research consumables & instruments",
+      "researchKicker": "Screen 2 · Research"
     },
     "badge": {
       "medical": "Medical",
@@ -501,10 +733,32 @@
     },
     "card": {
       "quote": "Quote",
+      "addToQuote": "+ Quote list",
       "license": "License",
       "solution": "Solution",
       "b2c": "Consumer",
       "inquire": "Inquire"
+    },
+    "quote": {
+      "kicker": "Quote list",
+      "title": "Batch inquiry · multiple products in one submission",
+      "sub": "Research consumables and rehab equipment support \"add to quote list\" for batch submission. For consumer products, use \"Buy now\" to contact us directly.",
+      "cartLabel": "Products added",
+      "empty": "No products yet. Click \"+ Quote list\" on a card above to add.",
+      "orgLabel": "Institution *",
+      "orgPlaceholder": "Full name of your institution",
+      "nameLabel": "Contact *",
+      "namePlaceholder": "Your name",
+      "telLabel": "Phone *",
+      "telPlaceholder": "Mobile number",
+      "emailLabel": "Email *",
+      "emailPlaceholder": "Your email",
+      "notesLabel": "Requirements",
+      "notesPlaceholder": "Notes — desired timing, special requirements, etc. (optional)",
+      "submit": "Submit quote request",
+      "note": "Sales will contact you within 3 business days with a formal quote.",
+      "barLabel": "items in quote list",
+      "barView": "View quote list →"
     },
     "products": {
       "spikelink": {
@@ -557,15 +811,50 @@
         "title": "HuanLian HD-MEA In-Vitro Array",
         "body": "22,400 Pt electrodes per well, 3,265 electrodes/mm². Real-time label-free in-vitro cell function, development, connectivity, morphology — phenotyping, disease modeling, drug discovery."
       },
+      "ultraHD": {
+        "kicker": "Ultra-HD",
+        "title": "Ultra-high-throughput digital neural electrode",
+        "body": "Spec: ultra-high density, thousands of channels."
+      },
+      "analysis": {
+        "kicker": "NeuroAnalysis",
+        "title": "NeuroAnalysis neural signal software",
+        "body": "Spec: perpetual license or annual subscription."
+      },
       "exo": {
         "kicker": "Exoskeleton",
         "title": "Brain-controlled exoskeleton",
         "body": "Motor-intent decoding + closed-loop rehab — limbs, hand, and neural modulation."
       },
+      "rehabEeg": {
+        "kicker": "EEG Cap",
+        "title": "EEG cap",
+        "body": "Spec: dry/wet electrodes, adult/child sizes."
+      },
+      "cog": {
+        "kicker": "Cognitive",
+        "title": "Cognitive rehabilitation system",
+        "body": "Spec: software plus EEG device."
+      },
+      "hand": {
+        "kicker": "Hand",
+        "title": "Hand-gesture rehabilitation system",
+        "body": "Spec: unilateral or bilateral."
+      },
+      "limb": {
+        "kicker": "Limb",
+        "title": "Upper/lower-limb rehabilitation system",
+        "body": "Spec: upper limb, lower limb, or integrated upper/lower limb."
+      },
       "ti": {
         "kicker": "TI Stim",
         "title": "Temporal interference stim",
         "body": "Non-invasive deep-brain stimulation — paired with transcranial EEG/MEG modulation."
+      },
+      "stim": {
+        "kicker": "Stim",
+        "title": "Electrical stimulation system",
+        "body": "Spec: single-channel or multi-channel."
       },
       "robot": {
         "kicker": "Robot",
@@ -586,6 +875,16 @@
         "kicker": "BCI Glasses",
         "title": "BCI glasses",
         "body": "BCI + eye-tracking + focus feedback for study aid and daily-life productivity."
+      },
+      "trainer": {
+        "kicker": "Trainer",
+        "title": "Heart-brain trainer",
+        "body": "Spec: standard edition."
+      },
+      "headband": {
+        "kicker": "Headband",
+        "title": "Smart headband",
+        "body": "Spec: basic or professional edition."
       }
     },
     "order": {
@@ -604,6 +903,13 @@
       "mpm": "Inquire MPM",
       "headstage": "Inquire Headstage",
       "neuroanalysis": "Request software demo",
+      "ultraHD": "Request quote",
+      "analysis": "Request quote",
+      "rehabEeg": "Request quote",
+      "cog": "Request quote",
+      "hand": "Request quote",
+      "limb": "Request quote",
+      "stim": "Request quote",
       "vr": "Inquire VR system",
       "hdmea": "Inquire HD-MEA",
       "exo": "Consult rehab plan",
@@ -611,7 +917,10 @@
       "robot": "Consult rehab robot",
       "eegcap": "About EEG cap",
       "emotion": "About emotion analyzer",
-      "glasses": "About BCI glasses"
+      "glasses": "About BCI glasses",
+      "buyGlasses": "Buy now",
+      "buyTrainer": "Buy now",
+      "buyHeadband": "Buy now"
     }
   }
 }

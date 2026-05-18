@@ -67,7 +67,7 @@
   </script>
 </head>
   <body data-page="home">
-    <a class="skip-to-content" href="#main-content">跳到正文 / Skip to content</a>
+    <a class="skip-to-content" href="#main-content">Skip to content</a>
     <header class="site-header" data-site-header>
       <a class="brand" href="index.html" aria-label="Huanlian Technology">
         <span class="brand-mark" aria-hidden="true"></span>
@@ -84,11 +84,13 @@
       </button>
             <nav class="primary-nav" id="primary-nav" data-primary-nav>
         <a href="index.html" data-nav-link="home" data-i18n="nav.home">首页</a>
+        <a href="platform.html" data-nav-link="platform" data-i18n="nav.platform">产品与服务</a>
         <a href="technology.html" data-nav-link="technology" data-i18n="nav.tech">核心技术</a>
-        <a href="platform.html" data-nav-link="platform" data-i18n="nav.platform">产品</a>
         <a href="apps.html" data-nav-link="apps" data-i18n="nav.apps">应用场景</a>
         <a href="partners.html" data-nav-link="partners" data-i18n="nav.partners">科研合作</a>
         <a href="shop.html" data-nav-link="shop" data-i18n="nav.shop">采购商城</a>
+        <a href="news.html" data-nav-link="news" data-i18n="nav.news">新闻动态</a>
+        <a href="about.html" data-nav-link="about" data-i18n="nav.about">关于我们</a>
         <a href="contact.html" data-nav-link="contact" data-i18n="nav.contact">联系我们</a>
         <button type="button" class="lang-switch" data-lang-switch>EN</button>
       </nav>
@@ -99,167 +101,49 @@
         <video class="hero-loop" src="assets/media/hero-loop-v2.mp4" autoplay muted loop playsinline poster="assets/images/hero-implant-v2.png" aria-hidden="true"></video>
         <div class="hero-overlay" aria-hidden="true"></div>
         <div class="hero-copy">
-          <p class="eyebrow" data-i18n="home.hero.eyebrow">合肥幻联科技：植入式脑机接口系统解决方案提供商</p>
-          <h1 id="home-title" data-i18n="home.hero.title">幻联科技</h1>
-          <p class="hero-lede" data-i18n="home.hero.lede">以自主可控的电极与采集技术，赋能神经科学研究与临床转化。</p>
+          <h1 id="home-title" data-i18n="home.hero.title">解码神经信号，重塑生命可能</h1>
+          <p class="hero-lede" data-i18n="home.hero.lede">从电极到算法，提供脑机接口全栈解决方案，赋能神经科学研究、临床康复与智能生活。</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="platform.html" data-i18n="home.hero.cta1">查看产品矩阵</a>
-            <a class="button button-secondary" href="technology.html" data-i18n="home.hero.cta2">了解技术路线</a>
+            <a class="button button-primary" href="platform.html" data-i18n="home.hero.cta1">探索产品</a>
+            <a class="button button-secondary" href="technology.html" data-i18n="home.hero.cta2">了解技术</a>
           </div>
         </div>
-        <div class="hero-proof">
-          <div>
-            <span class="metric-value">2048</span>
-            <span class="metric-label" data-i18n="home.hero.metric1">NeuroBox 高通量神经信号采集系统</span>
-          </div>
-          <div>
-            <span class="metric-value">32–256</span>
-            <span class="metric-label" data-i18n="home.hero.metric2">高密度硅基植入式电极阵列</span>
-          </div>
-          <div>
-            <span class="metric-value" data-i18n="home.hero.metric3value">全周期</span>
-            <span class="metric-label" data-i18n="home.hero.metric3">覆盖科研、临床与康复全场景</span>
-          </div>
-        </div>
-        <span class="hero-scroll-cue" aria-hidden="true" data-i18n="home.scroll">向下滚动 ↓</span>
+        <span class="hero-scroll-cue" aria-hidden="true" data-i18n="home.scroll">↓ 滚动探索更多</span>
       </section>
 
-      <section class="cinematic-band" data-align="bottom-left" aria-labelledby="cine-implant-title">
+      <section class="cinematic-band" data-align="bottom-left" aria-labelledby="cine-spikelink-title">
         <video class="cinematic-bg" src="assets/media/probe-glow.mp4" autoplay muted loop playsinline poster="assets/images/hero-implant.png" aria-hidden="true"></video>
         <div class="cinematic-copy">
-          <span class="cinematic-eyebrow" data-i18n="home.cine1.eyebrow">MICHIGAN · 植入</span>
-          <h2 id="cine-implant-title" data-i18n="home.cine1.title">把医院级脑机接口装进手术托盘</h2>
-          <p data-i18n="home.cine1.body">SpikeLink 全植入无线系统 + 密歇根硅基探针 + 黄金触点，32–256 通道覆盖，从术中植入到长期稳定记录的全周期。</p>
+          <span class="cinematic-eyebrow" data-i18n="home.cine1.eyebrow">SPIKELINK · 核心技术方案</span>
+          <h2 id="cine-spikelink-title" data-i18n="home.cine1.title">SpikeLink</h2>
+          <p class="cinematic-tag" data-i18n="home.cine1.sub">植入式脑机接口系统核心技术方案</p>
+          <ul class="cinematic-labels" data-i18n-list>
+            <li data-i18n="home.cine1.l1">高可靠密封封装</li>
+            <li data-i18n="home.cine1.l2">无线传输、无线供能</li>
+            <li data-i18n="home.cine1.l3">采集芯片、处理芯片</li>
+            <li data-i18n="home.cine1.l4">柔性电极接口</li>
+          </ul>
+          <p class="cinematic-link"><a href="platform.html#panel-overview" data-i18n="home.cine1.cta">查看完整技术详解 →</a></p>
         </div>
       </section>
       <section class="cinematic-band" data-align="bottom-right" aria-labelledby="cine-lab-title">
         <video class="cinematic-bg" src="assets/media/lab-monitors.mp4" autoplay muted loop playsinline poster="assets/images/lab-night.png" aria-hidden="true"></video>
         <div class="cinematic-copy">
-          <span class="cinematic-eyebrow" data-i18n="home.cine2.eyebrow">NEUROBOX · 采集</span>
-          <h2 id="cine-lab-title" data-i18n="home.cine2.title">高通量神经信号，实时呈现在屏幕上</h2>
+          <span class="cinematic-eyebrow" data-i18n="home.cine2.eyebrow">NEUROBOX · 科研解决方案</span>
+          <h2 id="cine-lab-title" data-i18n="home.cine2.title">科研解决方案</h2>
+          <p class="cinematic-tag" data-i18n="home.cine2.tag">最高 2048 通道，实时采集</p>
           <p data-i18n="home.cine2.body">NeuroBox 高通量神经信号采集系统，支持 2048 通道同步采集，可对多通道原始神经信号进行实时记录与传输，为后续分析解码提供完整、可靠的数据基础。</p>
-        </div>
-      </section>
-      <section class="cinematic-band" data-align="bottom-right" aria-labelledby="cine-decode-title">
-        <video class="cinematic-bg" src="assets/media/neural-waves-loop-v2.mp4" autoplay muted loop playsinline poster="assets/images/neural-waves-v2.png" aria-hidden="true"></video>
-        <div class="cinematic-copy">
-          <span class="cinematic-eyebrow" data-i18n="home.cineDecode.eyebrow">NEUROANALYSIS · 解码</span>
-          <h2 id="cine-decode-title" data-i18n="home.cineDecode.title">把神经活动还原成意图</h2>
-          <p data-i18n="home.cineDecode.body">NeuroAnalysis 神经信号分析软件，可对多通道原始神经信号进行解析，还原运动、语言、情绪等可观测意图，支撑闭环 BCI 系统的搭建与控制。</p>
-        </div>
-      </section>
-      <section class="section-band architecture-band" aria-labelledby="architecture-title">
-        <div class="section-heading">
-          <p class="eyebrow" data-i18n="home.pipe.kicker">FULL STACK · 全链路</p>
-          <h2 id="architecture-title" data-i18n="home.pipe.title">从植入界面到临床康复的完整技术链路</h2>
-          <p data-i18n="home.pipe.sub">覆盖植入、采集、分析、康复全流程，打造闭环式脑机接口解决方案。</p>
-        </div>
-        <div class="architecture-flow">
-          <article>
-            <span>01</span>
-            <h3 data-i18n="home.pipe.t1">MICHIGAN · 植入界面</h3>
-            <p data-i18n="home.pipe.p1">密歇根硅基、ECoG 柔性、微丝阵列。Spike + LFP + 微电流刺激。</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3 data-i18n="home.pipe.t2">NEUROBOX · 采集与定位</h3>
-            <p data-i18n="home.pipe.p2">NeuroBox 高通量主机、Headstage、MPM 多臂植入定位、Neuropixels 适配。</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3 data-i18n="home.pipe.t3">NEUROANALYSIS · 信号解析</h3>
-            <p data-i18n="home.pipe.p3">NeuroAnalysis 软件、AI 信号解析、Spike 分拣、关联编码。</p>
-          </article>
-          <article>
-            <span>04</span>
-            <h3 data-i18n="home.pipe.t4">REHAB · 临床康复</h3>
-            <p data-i18n="home.pipe.p4">SpikeLink 全植入系统、康复整体方案、TI/经颅调控、院外健康产品。</p>
-          </article>
-        </div>
-      </section>
-      <section class="cinematic-band" data-align="bottom-left" aria-labelledby="cine-fab-title">
-        <video class="cinematic-bg" src="assets/media/electrode-fab-loop-v2.mp4" autoplay muted loop playsinline poster="assets/images/electrode-fab-v2.png" aria-hidden="true"></video>
-        <div class="cinematic-copy">
-          <span class="cinematic-eyebrow" data-i18n="home.cineFab.eyebrow">CLEANROOM · 微纳加工</span>
-          <h2 id="cine-fab-title" data-i18n="home.cineFab.title">洁净间出品，微米级精度</h2>
-          <p data-i18n="home.cineFab.body">硅基探针、高密度触点阵列均由自有微纳加工产线制造；从掩膜到封装，每一步工艺均符合电生理级标准。</p>
-        </div>
-      </section>
-      <section class="demo-band" aria-labelledby="demo-title">
-        <div class="demo-frame">
-          <video src="assets/media/demo-video.mp4" controls preload="metadata" playsinline poster="assets/images/hero-implant.png"></video>
-        </div>
-        <div class="demo-copy">
-          <span class="cinematic-eyebrow" data-i18n="home.demo.eyebrow">DEMO · 产品演示</span>
-          <h2 id="demo-title" data-i18n="home.demo.title">从硬件到软件的完整工作流</h2>
-          <p data-i18n="home.demo.body">真实产品演示视频，呈现 SpikeLink + NeuroBox + NeuroAnalysis 在科研与临床场景下的端到端体验。</p>
-        </div>
-      </section>
-      <section class="section-band intro-band" aria-labelledby="intro-title">
-        <div class="section-grid two-column">
-          <div>
-            <p class="eyebrow" data-i18n="home.intro.kicker">关于我们</p>
-            <h2 id="intro-title" data-i18n="home.intro.title">合肥幻联科技 — 安徽省内领先的植入式脑机接口企业</h2>
-          </div>
-          <p class="section-lede" data-i18n="home.intro.lede">合肥幻联科技有限公司（幻联科技）是国内专注于植入式脑机接口系统研发与产业化的高科技企业，核心业务覆盖高端植入式电极、高通量神经信号采集设备、配套科研服务。团队覆盖材料科学、微纳加工、芯片设计、神经电生理与算法开发，掌握可溶性神经介质材料、硅基探针微纳加工、高频信号采集等核心技术。</p>
-        </div>
-        <div class="capability-grid">
-          <article class="capability-block">
-            <span class="capability-kicker" data-i18n="home.cap.k1">设备 · Devices</span>
-            <h3 data-i18n="home.cap.t1">植入式脑机设备</h3>
-            <p data-i18n="home.cap.p1">SpikeLink 全植入无线脑机接口、密歇根硅基/ECoG 柔性/微丝电极、NeuroBox 2048 通道采集系统与 HD-MEA。</p>
-          </article>
-          <article class="capability-block">
-            <span class="capability-kicker" data-i18n="home.cap.k2">科研 · Research</span>
-            <h3 data-i18n="home.cap.t2">科研服务</h3>
-            <p data-i18n="home.cap.p2">实验室解决方案、实验动物模型、临床转化方案、神经电生理数据分析与三年期学术合作。</p>
-          </article>
-          <article class="capability-block">
-            <span class="capability-kicker" data-i18n="home.cap.k3">临床 · Clinical</span>
-            <h3 data-i18n="home.cap.t3">康复整体方案</h3>
-            <p data-i18n="home.cap.p3">康复机器人、外骨骼、脑电/脑磁调控、TI 时间干涉刺激，联合三甲医院共建数字化康复中心。</p>
-          </article>
-          <article class="capability-block">
-            <span class="capability-kicker" data-i18n="home.cap.k4">生活 · Lifestyle</span>
-            <h3 data-i18n="home.cap.t4">脑机健康生活</h3>
-            <p data-i18n="home.cap.p4">脑电帽、脑波测试仪、情绪分析、脑机接口眼镜等智能穿戴，服务日常健康管理。</p>
-          </article>
-        </div>
-      </section>
-      <section class="section-band media-band" aria-labelledby="media-title">
-        <div class="section-grid media-layout">
-          <div>
-            <p class="eyebrow" data-i18n="home.launch.kicker">产品发布</p>
-            <h2 id="media-title" data-i18n="home.launch.title">安徽脑机接口联盟 · 植入式 BCI 产品发布</h2>
-            <p class="section-lede" data-i18n="home.launch.lede">幻联科技作为安徽脑机接口联盟成员，联合发布国产植入式脑机接口系列产品，推动高通量神经接口从实验室走向临床。</p>
-            <p class="launch-actions">
-              <a class="button button-primary" href="assets/docs/huanlian-product-manual.pdf" target="_blank" rel="noopener" data-i18n="home.launch.cta3">下载产品手册</a>
-              <a class="button button-secondary" href="assets/docs/anhui-bci-launch.pdf" target="_blank" rel="noopener" data-i18n="home.launch.cta1">下载发布资料</a>
-              <a class="button button-secondary" href="contact.html" data-i18n="home.launch.cta2">询问产品报价</a>
-            </p>
-          </div>
-          <div class="media-slots">
-            <figure class="media-slot large-slot" data-asset-target="hero-video">
-              <video src="assets/media/yangdong-keynote.mp4" controls preload="metadata" playsinline poster="assets/images/spikelink-launch.jpg"></video>
-              <figcaption data-i18n="home.launch.cap1">联盟发布主题分享</figcaption>
-            </figure>
-            <figure class="media-slot" data-asset-target="probe-macro">
-              <img src="assets/images/hero-implant.png" alt="SpikeLink 植入式 BCI 芯片特写" loading="lazy">
-              <figcaption data-i18n="home.launch.cap2">SpikeLink 芯片</figcaption>
-            </figure>
-            <figure class="media-slot" data-asset-target="software-demo">
-              <img src="assets/images/lab-night.png" alt="神经电生理实验室" loading="lazy">
-              <figcaption data-i18n="home.launch.cap3">电生理实验室</figcaption>
-            </figure>
-          </div>
+          <p class="cinematic-link"><a href="platform.html#panel-electrode" data-i18n="home.cine2.cta">查看全部科研产品 →</a></p>
         </div>
       </section>
       <section class="cinematic-band" data-align="bottom-left" aria-labelledby="cine-rehab-title">
         <video class="cinematic-bg" src="assets/media/rehab-motion.mp4" autoplay muted loop playsinline poster="assets/images/rehab-exo.png" aria-hidden="true"></video>
         <div class="cinematic-copy">
-          <span class="cinematic-eyebrow" data-i18n="home.cine3.eyebrow">REHAB · 康复</span>
-          <h2 id="cine-rehab-title" data-i18n="home.cine3.title">让运动意图重新到达肢体</h2>
+          <span class="cinematic-eyebrow" data-i18n="home.cine3.eyebrow">REHAB · 临床与康复</span>
+          <h2 id="cine-rehab-title" data-i18n="home.cine3.title">临床与康复解决方案</h2>
+          <p class="cinematic-tag" data-i18n="home.cine3.tag">脑控外骨骼，辅助行走</p>
           <p data-i18n="home.cine3.body">脑控外骨骼 + 闭环康复算法，联合安徽省立医院打造全国标杆性脑机智能数字化康复中心。</p>
+          <p class="cinematic-link"><a href="platform.html#rehab" data-i18n="home.cine3.cta">查看全部康复产品 →</a></p>
         </div>
       </section>
       <section class="section-band teaser-band" aria-labelledby="teaser-title">
@@ -291,19 +175,21 @@
         <div class="footer-brand">
           <span class="footer-mark" aria-hidden="true"></span>
           <p class="footer-name" data-i18n="footer.name">合肥幻联科技有限公司</p>
-          <p class="footer-sub" data-i18n="footer.sub">幻联科技 · Huanlian Technology</p>
+          <p class="footer-sub" data-i18n="footer.sub">生命数字化探索 | 植入式脑机接口系统研发 | 神经科学研究服务</p>
         </div>
         <div class="footer-links">
           <p class="footer-h" data-i18n="footer.h.site">站点</p>
           <a href="index.html" data-i18n="nav.home">首页</a>
+          <a href="platform.html" data-i18n="nav.platform">产品与服务</a>
           <a href="technology.html" data-i18n="nav.tech">核心技术</a>
-          <a href="platform.html" data-i18n="nav.platform">产品</a>
           <a href="apps.html" data-i18n="nav.apps">应用场景</a>
+          <a href="partners.html" data-i18n="nav.partners">科研合作</a>
         </div>
         <div class="footer-links">
           <p class="footer-h" data-i18n="footer.h.more">更多</p>
-          <a href="partners.html" data-i18n="nav.partners">科研合作</a>
           <a href="shop.html" data-i18n="nav.shop">采购商城</a>
+          <a href="news.html" data-i18n="nav.news">新闻动态</a>
+          <a href="about.html" data-i18n="nav.about">关于我们</a>
           <a href="contact.html" data-i18n="nav.contact">联系我们</a>
           <a href="assets/docs/huanlian-product-manual.pdf" target="_blank" rel="noopener" data-i18n="footer.h.pdf">产品手册 PDF</a>
         </div>

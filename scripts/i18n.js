@@ -7,8 +7,8 @@
   let registry = {
     default: "zh",
     languages: [
-      { code: "zh", label: "中", htmlLang: "zh-CN", ariaLabel: "切换中文", switchLabelTo: "EN" },
-      { code: "en", label: "EN", htmlLang: "en",    ariaLabel: "Switch to English", switchLabelTo: "中" },
+      { code: "zh", label: "ZH", htmlLang: "zh-CN", ariaLabel: "Switch to Chinese", switchLabelTo: "EN" },
+      { code: "en", label: "EN", htmlLang: "en",    ariaLabel: "Switch to English", switchLabelTo: "ZH" },
     ],
   };
 
@@ -95,8 +95,11 @@
       // could swap to a <select> — handled via the languages registry.
       document.querySelectorAll("[data-lang-switch]").forEach((btn) => {
         if (registry.languages.length === 2) {
-          btn.textContent = meta.switchLabelTo;
-          btn.setAttribute("aria-label", meta.ariaLabel);
+          const codes = supportedCodes();
+          const nextCode = codes[(codes.indexOf(target) + 1) % codes.length];
+          const nextMeta = getLangMeta(nextCode);
+          btn.textContent = nextMeta.label || meta.switchLabelTo;
+          btn.setAttribute("aria-label", nextMeta.ariaLabel || `Switch to ${nextCode}`);
         } else {
           // For >=3 languages, render a dropdown next to the button if not yet upgraded
           ensureLangPicker(btn, target);

@@ -46,7 +46,7 @@
   </script>
 </head>
   <body data-page="platform">
-    <a class="skip-to-content" href="#main-content">跳到正文 / Skip to content</a>
+    <a class="skip-to-content" href="#main-content">Skip to content</a>
     <header class="site-header" data-site-header>
       <a class="brand" href="index.html" aria-label="Huanlian Technology">
         <span class="brand-mark" aria-hidden="true"></span>
@@ -61,220 +61,137 @@
       </button>
             <nav class="primary-nav" id="primary-nav" data-primary-nav>
         <a href="index.html" data-nav-link="home" data-i18n="nav.home">首页</a>
+        <a href="platform.html" data-nav-link="platform" data-i18n="nav.platform">产品与服务</a>
         <a href="technology.html" data-nav-link="technology" data-i18n="nav.tech">核心技术</a>
-        <a href="platform.html" data-nav-link="platform" data-i18n="nav.platform">产品</a>
         <a href="apps.html" data-nav-link="apps" data-i18n="nav.apps">应用场景</a>
         <a href="partners.html" data-nav-link="partners" data-i18n="nav.partners">科研合作</a>
         <a href="shop.html" data-nav-link="shop" data-i18n="nav.shop">采购商城</a>
+        <a href="news.html" data-nav-link="news" data-i18n="nav.news">新闻动态</a>
+        <a href="about.html" data-nav-link="about" data-i18n="nav.about">关于我们</a>
         <a href="contact.html" data-nav-link="contact" data-i18n="nav.contact">联系我们</a>
         <button type="button" class="lang-switch" data-lang-switch>EN</button>
       </nav>
     </header>
 
     <main id="main-content">
-      <section class="page-hero platform-hero" aria-labelledby="platform-title">
-        <div>
-          <p class="eyebrow" data-i18n="platform.hero.kicker">产品 · Product Matrix</p>
-          <h1 id="platform-title" data-i18n="platform.hero.title">设备体系</h1>
-          <p data-i18n="platform.hero.lede">医疗级 + 科研级全栈：SpikeLink 全植入无线、NeuroBox 2048 通道采集、密歇根 / ECoG / 微丝电极、MPM 智能植入定位、HD-MEA 离体阵列。</p>
+      <section class="page-hero platform-hero platform-hero-rich" id="overview" aria-labelledby="platform-title">
+        <div class="platform-hero-bg" aria-hidden="true">
+          <img src="assets/images/hero-bg-platform.png" alt="" loading="eager">
         </div>
-        <figure class="model-stage" data-model-target="implant-stack" aria-label="SpikeLink · NeuroBox · MPM">
-          <video src="assets/media/platform-hero-loop.mp4" autoplay muted loop playsinline poster="assets/images/hero-implant.png" aria-hidden="true"></video>
-          <figcaption data-i18n="platform.hero.cap">SpikeLink · NeuroBox · MPM</figcaption>
-        </figure>
+        <div class="page-hero-copy">
+          <h1 id="platform-title" data-i18n="platform.hero.title">产品与服务</h1>
+          <p class="page-hero-lede" data-i18n="platform.overview.lede">覆盖科研、临床、消费全场景，提供从电极到算法的完整解决方案。</p>
+          <ul class="overview-grid overview-grid-rich">
+            <li><span class="card-num">01</span><figure class="card-thumb"><img src="assets/images/hero-implant.png" alt="医疗 SpikeLink" loading="lazy"></figure><h3 data-i18n="platform.overview.g1Title">医疗产品</h3><p data-i18n="platform.overview.g1Body">SpikeLink — 全植入无线脑机接口系统</p><a class="card-cta" href="#panel-overview" data-i18n="platform.overview.g1Cta">查看 →</a></li>
+            <li><span class="card-num">02</span><figure class="card-thumb"><img src="assets/images/ecog-array.png" alt="科研 电极" loading="lazy"></figure><h3 data-i18n="platform.overview.g2Title">科研产品</h3><p data-i18n="platform.overview.g2Body">高精度电极 · 采集系统 · 分析软件</p><a class="card-cta" href="#panel-electrode" data-i18n="platform.overview.g2Cta">查看 →</a></li>
+            <li><span class="card-num">03</span><figure class="card-thumb"><img src="assets/images/rehab-exo.png" alt="康复 外骨骼" loading="lazy"></figure><h3 data-i18n="platform.overview.g3Title">康复产品</h3><p data-i18n="platform.overview.g3Body">脑电帽 · 外骨骼 · 刺激系统</p><a class="card-cta" href="#rehab" data-i18n="platform.overview.g3Cta">查看 →</a></li>
+            <li><span class="card-num">04</span><figure class="card-thumb"><img src="assets/images/bci-glasses.png" alt="消费 眼镜" loading="lazy"></figure><h3 data-i18n="platform.overview.g4Title">消费产品</h3><p data-i18n="platform.overview.g4Body">眼镜 · 头环 · 心脑训练仪</p><a class="card-cta" href="#consumer" data-i18n="platform.overview.g4Cta">查看 →</a></li>
+            <li><span class="card-num">05</span><figure class="card-thumb"><img src="assets/images/chip-packaging.png" alt="定制 工程" loading="lazy"></figure><h3 data-i18n="platform.overview.g5Title">定制服务</h3><p data-i18n="platform.overview.g5Body">按需设计 · 全流程支持</p><a class="card-cta" href="#custom" data-i18n="platform.overview.g5Cta">查看 →</a></li>
+          </ul>
+        </div>
       </section>
 
-      <section class="section-band product-band" aria-labelledby="product-title">
+      <section class="section-band spikelink-band" id="panel-overview" aria-labelledby="spikelink-title">
         <div class="section-heading align-left">
-          <p class="eyebrow" data-i18n="platform.modules.kicker">产品分类</p>
-          <h2 id="product-title" data-i18n="platform.modules.title">四类产品 · 一站全栈</h2>
-          <p class="section-lede" data-i18n="platform.modules.lede">点击切换，每一类都给你完整规格、视觉与询价入口。</p>
+          <p class="eyebrow">第2屏 · 医疗</p>
+          <h2 id="spikelink-title">SpikeLink</h2>
+          <p class="section-lede">植入式脑机接口系统核心技术模组</p>
         </div>
-        <div class="module-tabs" data-module-tabs>
-          <div class="tab-controls" role="tablist" aria-label="产品分类">
-            <button type="button" role="tab" aria-selected="true" aria-controls="panel-overview" id="tab-overview" data-tab="overview"><span data-i18n="platform.modules.tab1">总览</span><em data-i18n="platform.modules.sub1">SpikeLink</em></button>
-            <button type="button" role="tab" aria-selected="false" aria-controls="panel-electrode" id="tab-electrode" data-tab="electrode"><span data-i18n="platform.modules.tab2">电极</span><em data-i18n="platform.modules.sub2">3 系列</em></button>
-            <button type="button" role="tab" aria-selected="false" aria-controls="panel-asic" id="tab-asic" data-tab="asic"><span data-i18n="platform.modules.tab3">采集与定位</span><em data-i18n="platform.modules.sub3">NeuroBox · MPM</em></button>
-            <button type="button" role="tab" aria-selected="false" aria-controls="panel-software" id="tab-software" data-tab="software"><span data-i18n="platform.modules.tab4">软件与离体</span><em data-i18n="platform.modules.sub4">NeuroAnalysis · HD-MEA</em></button>
-          </div>
-
-          <article class="tab-panel is-active" role="tabpanel" id="panel-overview" aria-labelledby="tab-overview" data-panel="overview">
-            <div class="tab-panel-grid">
-              <figure class="tab-media">
-                <video src="assets/media/probe-glow.mp4" muted autoplay loop playsinline poster="assets/images/hero-implant.png"></video>
-                <figcaption data-i18n="platform.tab.cap1">SpikeLink 全植入</figcaption>
-              </figure>
-              <div class="tab-content">
-                <p class="tab-product-kicker">SpikeLink</p>
-                <h3 data-i18n="platform.modules.p1Title">全植入无线脑机接口系统</h3>
-                <p data-i18n="platform.modules.p1Body">幻联科技医疗级旗舰产品，面向临床场景的全植入无线 BCI 系统，与科研级 NeuroBox / 电极 / 软件协同，构成实验室—临床—院外完整闭环。</p>
-                <dl class="spec-grid">
-                  <div><dt data-i18n="platform.modules.s1k1">类型</dt><dd data-i18n="platform.modules.s1v1">全植入无线</dd></div>
-                  <div><dt data-i18n="platform.modules.s1k2">等级</dt><dd data-i18n="platform.modules.s1v2">医疗级</dd></div>
-                  <div><dt data-i18n="platform.modules.s1k3">场景</dt><dd data-i18n="platform.modules.s1v3">院内 + 院外</dd></div>
-                  <div><dt data-i18n="platform.modules.s1k4">配套</dt><dd data-i18n="platform.modules.s1v4">NeuroBox · 电极 · 软件</dd></div>
-                </dl>
-                <div class="tab-actions">
-                  <a class="button button-primary" href="mailto:AstroMind@xnzlsmart.cn?subject=SpikeLink%20Inquiry" data-i18n="platform.modules.cta1">询价 SpikeLink</a>
-                  <a class="button button-secondary" href="shop.html" data-i18n="platform.modules.cta1b">查看商城</a>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <article class="tab-panel" role="tabpanel" id="panel-electrode" aria-labelledby="tab-electrode" data-panel="electrode" hidden>
-            <div class="tab-panel-grid">
-              <figure class="tab-media">
-                <video src="assets/media/ecog-zoom.mp4" muted autoplay loop playsinline poster="assets/images/ecog-array.png"></video>
-                <figcaption data-i18n="platform.tab.cap2">ECoG / 密歇根 / 微丝</figcaption>
-              </figure>
-              <div class="tab-content">
-                <p class="tab-product-kicker">Electrodes</p>
-                <h3 data-i18n="platform.modules.p2Title">三类植入电极</h3>
-                <p data-i18n="platform.modules.p2Body">密歇根硅基（32–256 通道，超薄针体，光遗传兼容）｜ ECoG 柔性皮层（长期 LFP 跟踪、多脑区）｜ 微丝（PEG 封装精准穿刺，Spike/LFP + 微电流刺激）。</p>
-                <dl class="spec-grid">
-                  <div><dt data-i18n="platform.modules.s2k1">密歇根通道</dt><dd data-i18n="platform.modules.s2v1">32 – 256</dd></div>
-                  <div><dt data-i18n="platform.modules.s2k2">ECoG</dt><dd data-i18n="platform.modules.s2v2">柔性 / 多脑区</dd></div>
-                  <div><dt data-i18n="platform.modules.s2k3">微丝露出</dt><dd data-i18n="platform.modules.s2v3">2 – 14 mm</dd></div>
-                  <div><dt data-i18n="platform.modules.s2k4">记录</dt><dd data-i18n="platform.modules.s2v4">Spike + LFP + ECoG</dd></div>
-                </dl>
-                <div class="tab-actions">
-                  <a class="button button-primary" href="mailto:AstroMind@xnzlsmart.cn?subject=Electrode%20Inquiry" data-i18n="platform.modules.cta2">询价电极</a>
-                  <a class="button button-secondary" href="shop.html#shop-electrode-title" data-i18n="platform.modules.cta2b">查看 3 款</a>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <article class="tab-panel" role="tabpanel" id="panel-asic" aria-labelledby="tab-asic" data-panel="asic" hidden>
-            <div class="tab-panel-grid">
-              <figure class="tab-media">
-                <video src="assets/media/lab-monitors.mp4" muted autoplay loop playsinline poster="assets/images/lab-night.png"></video>
-                <figcaption data-i18n="platform.tab.cap3">NeuroBox / Headstage / MPM</figcaption>
-              </figure>
-              <div class="tab-content">
-                <p class="tab-product-kicker">Acquisition · Targeting</p>
-                <h3 data-i18n="platform.modules.p3Title">神经电生理采集与定位</h3>
-                <p data-i18n="platform.modules.p3Body">NeuroBox 高通量主机（2048 通道）｜ Headstage 前端放大器（32/64 通道，专用 2 m 串行连接线）｜ MPM 多臂智能植入（多电极 / 光纤 / 注射针并行）｜ Neuropixels 适配。</p>
-                <dl class="spec-grid">
-                  <div><dt data-i18n="platform.modules.s3k1">NeuroBox 通道</dt><dd data-i18n="platform.modules.s3v1">2048</dd></div>
-                  <div><dt data-i18n="platform.modules.s3k2">采样率</dt><dd data-i18n="platform.modules.s3v2">0 – 30 kHz</dd></div>
-                  <div><dt data-i18n="platform.modules.s3k3">Headstage</dt><dd data-i18n="platform.modules.s3v3">32 / 64 ch</dd></div>
-                  <div><dt data-i18n="platform.modules.s3k4">MPM</dt><dd data-i18n="platform.modules.s3v4">多臂并行植入</dd></div>
-                </dl>
-                <div class="tab-actions">
-                  <a class="button button-primary" href="mailto:AstroMind@xnzlsmart.cn?subject=Acquisition%20Inquiry" data-i18n="platform.modules.cta3">询价采集系统</a>
-                  <a class="button button-secondary" href="shop.html#shop-acq-title" data-i18n="platform.modules.cta3b">查看 3 款</a>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <article class="tab-panel" role="tabpanel" id="panel-software" aria-labelledby="tab-software" data-panel="software" hidden>
-            <div class="tab-panel-grid">
-              <figure class="tab-media">
-                <video src="assets/media/tech-software-loop.mp4" muted autoplay loop playsinline poster="assets/images/waveform-monitor.png"></video>
-                <figcaption data-i18n="platform.tab.cap4">NeuroAnalysis · VR · HD-MEA</figcaption>
-              </figure>
-              <div class="tab-content">
-                <p class="tab-product-kicker">Software · In-Vitro</p>
-                <h3 data-i18n="platform.modules.p4Title">软件、VR 与离体阵列</h3>
-                <p data-i18n="platform.modules.p4Body">NeuroAnalysis 神经信号记录分析（实时波形、0–30 kHz 采样、阻抗测量、一键分选）｜ VR 动物行为仿真（270° 多屏 + 双 GPU）｜ HD-MEAs 离体高密度阵列（体外细胞功能 / 发育 / 连接 / 形态实时无标记检测）。</p>
-                <dl class="spec-grid">
-                  <div><dt data-i18n="platform.modules.s4k1">软件</dt><dd data-i18n="platform.modules.s4v1">NeuroAnalysis</dd></div>
-                  <div><dt data-i18n="platform.modules.s4k2">采样率</dt><dd data-i18n="platform.modules.s4v2">0 – 30 kHz</dd></div>
-                  <div><dt data-i18n="platform.modules.s4k3">VR</dt><dd data-i18n="platform.modules.s4v3">270° 多屏 + 双 GPU</dd></div>
-                  <div><dt data-i18n="platform.modules.s4k4">HD-MEA</dt><dd data-i18n="platform.modules.s4v4">无标记 / 实时</dd></div>
-                </dl>
-                <div class="tab-actions">
-                  <a class="button button-primary" href="mailto:AstroMind@xnzlsmart.cn?subject=Software%20Inquiry" data-i18n="platform.modules.cta4">申请软件演示</a>
-                  <a class="button button-secondary" href="shop.html#shop-software-title" data-i18n="platform.modules.cta4b">查看 3 款</a>
-                </div>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section-band services-band" aria-labelledby="services-title">
-        <div class="section-heading align-left">
-          <p class="eyebrow" data-i18n="platform.services.kicker">配套科研服务</p>
-          <h2 id="services-title" data-i18n="platform.services.title">六类科研服务 · 一站托底</h2>
-          <p class="section-lede" data-i18n="platform.services.lede">从实验室一体化交付到学术合作，6 条服务线覆盖从设备进场到论文发表。</p>
-        </div>
-        <div class="services-grid">
-          <article class="service-card" style="--bg-image:url('/assets/images/lab-night.png')">
-            <p class="service-num">01</p>
-            <p class="service-tag" data-i18n="platform.services.tag1">交付一体化</p>
-            <h3 data-i18n="platform.services.h1">实验室解决方案</h3>
-            <p data-i18n="platform.services.p1">2048 通道高通量主机 + 全系列神经探针 + AI 信号解析 + 可视化平台一体化交付。</p>
-            <a class="service-link" href="mailto:AstroMind@xnzlsmart.cn?subject=Lab%20Inquiry" data-i18n="platform.services.cta1">咨询交付方案 →</a>
-          </article>
-          <article class="service-card" style="--bg-image:url('/assets/images/optogenetic.png')">
-            <p class="service-num">02</p>
-            <p class="service-tag" data-i18n="platform.services.tag2">动物模型</p>
-            <h3 data-i18n="platform.services.h2">实验动物模型</h3>
-            <p data-i18n="platform.services.p2">标准化造模、饲养、行为学检测、样本制备，适配神经环路、药效评价与器件植入验证。</p>
-            <a class="service-link" href="mailto:AstroMind@xnzlsmart.cn?subject=Animal%20Model%20Inquiry" data-i18n="platform.services.cta2">了解动物模型 →</a>
-          </article>
-          <article class="service-card" style="--bg-image:url('/assets/images/clinic-room.png')">
-            <p class="service-num">03</p>
-            <p class="service-tag" data-i18n="platform.services.tag3">临床转化</p>
-            <h3 data-i18n="platform.services.h3">临床转化方案</h3>
-            <p data-i18n="platform.services.p3">实验室—临床—院外三场景，五种解决方案 + 四种产品线，支持非植入与植入式临床路径。</p>
-            <a class="service-link" href="mailto:AstroMind@xnzlsmart.cn?subject=Clinical%20Inquiry" data-i18n="platform.services.cta3">沟通临床路径 →</a>
-          </article>
-          <article class="service-card" style="--bg-image:url('/assets/images/waveform-monitor.png')">
-            <p class="service-num">04</p>
-            <p class="service-tag" data-i18n="platform.services.tag4">数据分析</p>
-            <h3 data-i18n="platform.services.h4">神经电生理数据分析</h3>
-            <p data-i18n="platform.services.p4">降噪、Spike 分拣、时序与关联编码、批量原始数据处理与论文级图谱输出。</p>
-            <a class="service-link" href="mailto:AstroMind@xnzlsmart.cn?subject=Data%20Analysis%20Inquiry" data-i18n="platform.services.cta4">提交分析需求 →</a>
-          </article>
-          <article class="service-card" style="--bg-image:url('/assets/images/conference.png')">
-            <p class="service-num">05</p>
-            <p class="service-tag" data-i18n="platform.services.tag5">三年合作</p>
-            <h3 data-i18n="platform.services.h5">学术服务</h3>
-            <p data-i18n="platform.services.p5">顶级期刊辅导、国家级项目申报、国际高校合作与三年科研合作计划。</p>
-            <a class="service-link" href="mailto:AstroMind@xnzlsmart.cn?subject=Academic%20Inquiry" data-i18n="platform.services.cta5">申请三年合作 →</a>
-          </article>
-          <article class="service-card" style="--bg-image:url('/assets/images/rehab-exo.png')">
-            <p class="service-num">06</p>
-            <p class="service-tag" data-i18n="platform.services.tag6">整体康复</p>
-            <h3 data-i18n="platform.services.h6">康复整体方案</h3>
-            <p data-i18n="platform.services.p6">康复机器人、外骨骼、上下肢/手功能/认知/语言/吞咽训练、TI 与经颅脑电脑磁调控。</p>
-            <a class="service-link" href="mailto:AstroMind@xnzlsmart.cn?subject=Rehab%20Inquiry" data-i18n="platform.services.cta6">咨询康复中心 →</a>
-          </article>
-        </div>
-      </section>
-
-      <section class="section-band media-band" aria-labelledby="launch-title">
-        <div class="section-grid media-layout">
-          <div>
-            <p class="eyebrow" data-i18n="platform.launch.kicker">产品发布资料</p>
-            <h2 id="launch-title" data-i18n="platform.launch.title">产品发布资料</h2>
-            <p class="section-lede" data-i18n="platform.launch.lede">安徽脑机接口联盟联合发布植入式 BCI 系列产品。完整发布材料包含 SpikeLink 系统图文、技术参数与现场图集。</p>
-            <p class="launch-actions">
-              <a class="button button-primary" href="assets/docs/anhui-bci-launch.pdf" target="_blank" rel="noopener" data-i18n="platform.launch.cta1">查看发布 PDF</a>
-              <a class="button button-secondary" href="contact.html" data-i18n="platform.launch.cta2">询问产品报价</a>
+        <div class="spikelink-detail">
+          <figure class="spikelink-media">
+            <video src="assets/media/probe-glow.mp4" muted autoplay loop playsinline poster="assets/images/hero-implant-v2.png"></video>
+            <figcaption>一体化植入式模组 · 封装 / 无线 / 芯片 / 电极</figcaption>
+          </figure>
+          <div class="spikelink-content">
+            <p class="spikelink-body">一体化植入式模组，集成封装、无线传输、采集刺激芯片与柔性电极接口。幻联科技医疗级旗舰产品，面向临床场景的全植入无线 BCI 系统。</p>
+            <ul class="feature-list spikelink-features">
+              <li><strong>高可靠密封封装</strong><span>陶瓷 / 金属生物兼容封装，满足长期植入密封性要求。</span></li>
+              <li><strong>无线传输、无线供能</strong><span>集成无线数据与供能线圈，配合微型电池，实现无创补能和实时传输。</span></li>
+              <li><strong>采集芯片、处理芯片</strong><span>自研采集与处理一体芯片，支持神经信号高保真采集与精准电刺激。</span></li>
+              <li><strong>柔性电极接口</strong><span>高顺应性柔性材料，与神经组织精准耦合，降低损伤。</span></li>
+            </ul>
+            <p class="spikelink-applications">
+              <span class="app-label">应用领域</span>
+              长期植入式脑机接口研究 · 神经疾病治疗 · 运动与感觉功能重建
             </p>
-          </div>
-          <div class="media-slots">
-            <figure class="media-slot large-slot">
-              <video src="assets/media/probe-glow.mp4" muted autoplay loop playsinline poster="assets/images/hero-implant.png"></video>
-              <figcaption data-i18n="platform.launch.cap1">SpikeLink 芯片</figcaption>
-            </figure>
-            <figure class="media-slot">
-              <video src="assets/media/yangdong-keynote.mp4" controls preload="metadata" playsinline poster="assets/images/spikelink-launch.jpg"></video>
-              <figcaption data-i18n="platform.launch.cap2">联盟发布主题分享</figcaption>
-            </figure>
-            <figure class="media-slot">
-              <img src="assets/images/ecog-array.png" alt="ECoG 柔性皮层电极" loading="lazy">
-              <figcaption data-i18n="platform.launch.cap3">ECoG 电极</figcaption>
-            </figure>
+            <div class="spikelink-actions">
+              <a class="button button-primary" href="mailto:AstroMind@xnzlsmart.cn?subject=SpikeLink%20Inquiry">在线询价</a>
+              <a class="button button-secondary" href="#overview">← 返回产品列表</a>
+            </div>
           </div>
         </div>
       </section>
+
+      <section class="section-band research-band" id="panel-electrode" aria-labelledby="research-title">
+        <div class="section-heading align-left">
+          <p class="eyebrow">第3屏 · 科研</p>
+          <h2 id="research-title">科研产品</h2>
+          <p class="section-lede">从单神经元到群体编码，为神经科学提供全链条工具。</p>
+        </div>
+        <ul class="research-grid">
+          <li class="research-card"><span class="research-num">01</span><figure class="research-thumb"><img src="assets/images/neuropixels.png" alt="" loading="lazy"></figure><h4>密歇根电极</h4><p>高密度多通道硅基探针，32-256 通道灵活定制</p><a class="card-cta" href="mailto:AstroMind@xnzlsmart.cn?subject=Michigan%20Inquiry">在线询价 →</a></li>
+          <li class="research-card"><span class="research-num">02</span><figure class="research-thumb"><img src="assets/images/ecog-array.png" alt="" loading="lazy"></figure><h4>ECoG 柔性电极</h4><p>超薄柔性皮层电极，长期稳定追踪 LFP 信号</p><a class="card-cta" href="mailto:AstroMind@xnzlsmart.cn?subject=ECoG%20Inquiry">在线询价 →</a></li>
+          <li class="research-card"><span class="research-num">03</span><figure class="research-thumb"><img src="assets/images/neuropixels.png" alt="" loading="lazy"></figure><h4>微丝电极</h4><p>经典微丝阵列，稳定可靠的单 / 多单元记录</p><a class="card-cta" href="mailto:AstroMind@xnzlsmart.cn?subject=Microwire%20Inquiry">在线询价 →</a></li>
+          <li class="research-card"><span class="research-num">04</span><figure class="research-thumb"><img src="assets/images/hd-mea-chip.png" alt="" loading="lazy"></figure><h4>超高通量数字化神经电极</h4><p>数千通道级，超高密度神经群体记录</p><a class="card-cta" href="mailto:AstroMind@xnzlsmart.cn?subject=UltraHD%20Inquiry">在线询价 →</a></li>
+          <li class="research-card"><span class="research-num">05</span><figure class="research-thumb"><img src="assets/images/lab-night.png" alt="" loading="lazy"></figure><h4>虚拟现实 VR 系统</h4><p>沉浸式行为实验与神经信号同步采集</p><a class="card-cta" href="mailto:AstroMind@xnzlsmart.cn?subject=VR%20Inquiry">在线询价 →</a></li>
+          <li class="research-card"><span class="research-num">06</span><figure class="research-thumb"><img src="assets/images/hd-mea-chip.png" alt="" loading="lazy"></figure><h4>离体脑机超高密度微电极阵列</h4><p>MEA 芯片级离体记录，药物筛选与机理研究</p><a class="card-cta" href="mailto:AstroMind@xnzlsmart.cn?subject=HD-MEA%20Inquiry">在线询价 →</a></li>
+          <li class="research-card"><span class="research-num">07</span><figure class="research-thumb"><img src="assets/images/acquisition-rack.png" alt="" loading="lazy"></figure><h4>NeuroBox 高通量神经信号采集系统</h4><p>最高 2048 通道，实时采集</p><a class="card-cta" href="mailto:AstroMind@xnzlsmart.cn?subject=NeuroBox%20Inquiry">在线询价 →</a></li>
+          <li class="research-card"><span class="research-num">08</span><figure class="research-thumb"><img src="assets/images/neural-waves-v2.png" alt="" loading="lazy" onerror="this.src='assets/images/lab-night.png'"></figure><h4>神经信号分析软件</h4><p>AI 辅助解码，峰电位分选</p><a class="card-cta" href="mailto:AstroMind@xnzlsmart.cn?subject=Software%20Inquiry">在线询价 →</a></li>
+          <li class="research-card"><span class="research-num">09</span><figure class="research-thumb"><img src="assets/images/acquisition-rack.png" alt="" loading="lazy"></figure><h4>Headstage 及专用连接线</h4><p>低噪声 Headstage，适配多种电极接口</p><a class="card-cta" href="mailto:AstroMind@xnzlsmart.cn?subject=Headstage%20Inquiry">在线询价 →</a></li>
+          <li class="research-card"><span class="research-num">10</span><figure class="research-thumb"><img src="assets/images/bench-grid.png" alt="" loading="lazy"></figure><h4>多臂脑图谱定位智能植入系统</h4><p>多臂协同，精准靶向脑区植入</p><a class="card-cta" href="mailto:AstroMind@xnzlsmart.cn?subject=MPM%20Inquiry">在线询价 →</a></li>
+        </ul>
+      </section>
+
+      <section class="section-band rehab-band" id="rehab" aria-labelledby="rehab-title">
+        <div class="section-heading align-left">
+          <p class="eyebrow" data-i18n="platform.rehab.kicker">康复产品</p>
+          <h2 id="rehab-title" data-i18n="platform.rehab.title">脑机接口康复 · 神经调控</h2>
+          <p class="section-lede" data-i18n="platform.rehab.lede">意念驱动，重塑运动与认知能力。</p>
+        </div>
+        <h3 class="band-sub-title" data-i18n="platform.rehab.subBci">脑控康复产品</h3>
+        <div class="compact-grid">
+          <article class="compact-card"><h4 data-i18n="platform.rehab.r1Title">脑电帽</h4><p data-i18n="platform.rehab.r1Body">干/湿电极可选，快速穿戴，适配临床与科研。</p><a class="card-cta" href="shop.html#shop-rehab" data-i18n="platform.rehab.r1Cta">在线询价 →</a></article>
+          <article class="compact-card"><h4 data-i18n="platform.rehab.r2Title">认知障碍康复系统</h4><p data-i18n="platform.rehab.r2Body">基于脑电的认知评估与训练，适用于卒中、痴呆等。</p><a class="card-cta" href="shop.html#shop-rehab" data-i18n="platform.rehab.r2Cta">在线询价 →</a></article>
+          <article class="compact-card"><h4 data-i18n="platform.rehab.r3Title">手势康复系统</h4><p data-i18n="platform.rehab.r3Body">意念驱动手部功能重建，助力偏瘫患者。</p><a class="card-cta" href="shop.html#shop-rehab" data-i18n="platform.rehab.r3Cta">在线询价 →</a></article>
+          <article class="compact-card"><h4 data-i18n="platform.rehab.r4Title">上下肢康复系统</h4><p data-i18n="platform.rehab.r4Body">运动想象触发电刺激与外骨骼，促进神经重塑。</p><a class="card-cta" href="shop.html#shop-rehab" data-i18n="platform.rehab.r4Cta">在线询价 →</a></article>
+          <article class="compact-card"><h4 data-i18n="platform.rehab.r5Title">外骨骼机器人</h4><p data-i18n="platform.rehab.r5Body">脑控外骨骼，辅助行走，支持院外延续康复。</p><a class="card-cta" href="shop.html#shop-rehab" data-i18n="platform.rehab.r5Cta">在线询价 →</a></article>
+        </div>
+        <h3 class="band-sub-title" data-i18n="platform.rehab.subNeuro">神经调控产品</h3>
+        <div class="compact-grid">
+          <article class="compact-card"><h4 data-i18n="platform.rehab.n1Title">经颅电刺激仪</h4><p data-i18n="platform.rehab.n1Body">非侵入式神经调控，微弱电流调节皮层兴奋性，适用于康复与科研。</p><a class="card-cta" href="shop.html#shop-rehab" data-i18n="platform.rehab.n1Cta">在线询价 →</a></article>
+          <article class="compact-card"><h4 data-i18n="platform.rehab.n2Title">经颅磁刺激仪</h4><p data-i18n="platform.rehab.n2Body">脉冲磁场无创穿透颅骨，精准刺激靶向脑区，用于神经调控与疾病研究。</p><a class="card-cta" href="shop.html#shop-rehab" data-i18n="platform.rehab.n2Cta">在线询价 →</a></article>
+          <article class="compact-card"><h4 data-i18n="platform.rehab.n3Title">时间干涉刺激仪</h4><p data-i18n="platform.rehab.n3Body">多通道高频电场干涉，实现深部脑区无创聚焦刺激，突破非侵入技术局限。</p><a class="card-cta" href="shop.html#shop-rehab" data-i18n="platform.rehab.n3Cta">在线询价 →</a></article>
+        </div>
+      </section>
+
+      <section class="section-band consumer-band" id="consumer" aria-labelledby="consumer-title">
+        <div class="section-heading align-left">
+          <p class="eyebrow" data-i18n="platform.consumer.kicker">消费产品</p>
+          <h2 id="consumer-title" data-i18n="platform.consumer.title">脑机接口，让生活更智能</h2>
+          <p class="section-lede" data-i18n="platform.consumer.lede">轻量化、日常化的脑机能力，从临床走向消费场景。</p>
+        </div>
+        <div class="compact-grid">
+          <article class="compact-card"><h4 data-i18n="platform.consumer.c1Title">脑机接口眼镜</h4><p data-i18n="platform.consumer.c1Body">日常佩戴，注意力监测与交互，轻量化设计。</p><a class="card-cta" href="shop.html#shop-life" data-i18n="platform.consumer.c1Cta">立即购买 →</a></article>
+          <article class="compact-card"><h4 data-i18n="platform.consumer.c2Title">心脑训练仪</h4><p data-i18n="platform.consumer.c2Body">客观量化情绪与认知状态，智能引导心脑康复训练。</p><a class="card-cta" href="shop.html#shop-life" data-i18n="platform.consumer.c2Cta">立即购买 →</a></article>
+          <article class="compact-card"><h4 data-i18n="platform.consumer.c3Title">智能头环</h4><p data-i18n="platform.consumer.c3Body">轻量级脑电监测，助眠与专注力训练。</p><a class="card-cta" href="shop.html#shop-life" data-i18n="platform.consumer.c3Cta">立即购买 →</a></article>
+        </div>
+      </section>
+
+      <section class="section-band custom-band" id="custom" aria-labelledby="custom-title">
+        <div class="section-heading align-left">
+          <p class="eyebrow" data-i18n="platform.custom.kicker">定制服务</p>
+          <h2 id="custom-title" data-i18n="platform.custom.title">按需设计 · 全流程支持</h2>
+          <p class="section-lede" data-i18n="platform.custom.lede">适用对象：高校实验室 · 研究所 · 医院科研中心 · 企业研发部门。</p>
+        </div>
+        <div class="compact-grid">
+          <article class="compact-card"><h4 data-i18n="platform.custom.s1Title">定制电极设计</h4><p data-i18n="platform.custom.s1Body">位点尺寸、通道数、针体长度、阵列排布、封装形式按需定制。</p><a class="card-cta" href="mailto:AstroMind@xnzlsmart.cn?subject=Custom%20Electrode%20Design" data-i18n="platform.custom.s1Cta">联系定制 →</a></article>
+          <article class="compact-card"><h4 data-i18n="platform.custom.s2Title">定制系统配置</h4><p data-i18n="platform.custom.s2Body">通道数、采样率、输入范围灵活配置。</p><a class="card-cta" href="mailto:AstroMind@xnzlsmart.cn?subject=Custom%20System%20Config" data-i18n="platform.custom.s2Cta">联系定制 →</a></article>
+          <article class="compact-card"><h4 data-i18n="platform.custom.s3Title">定制算法开发</h4><p data-i18n="platform.custom.s3Body">面向特定实验需求的数据分析算法开发。</p><a class="card-cta" href="mailto:AstroMind@xnzlsmart.cn?subject=Custom%20Algorithm" data-i18n="platform.custom.s3Cta">联系定制 →</a></article>
+          <article class="compact-card"><h4 data-i18n="platform.custom.s4Title">实验方案设计</h4><p data-i18n="platform.custom.s4Body">协助设计在体与离体实验方案。</p><a class="card-cta" href="mailto:AstroMind@xnzlsmart.cn?subject=Experiment%20Design" data-i18n="platform.custom.s4Cta">联系定制 →</a></article>
+        </div>
+      </section>
+
+
     </main>
 
     <footer class="site-footer">
@@ -282,19 +199,21 @@
         <div class="footer-brand">
           <span class="footer-mark" aria-hidden="true"></span>
           <p class="footer-name" data-i18n="footer.name">合肥幻联科技有限公司</p>
-          <p class="footer-sub" data-i18n="footer.sub">幻联科技 · Huanlian Technology</p>
+          <p class="footer-sub" data-i18n="footer.sub">生命数字化探索 | 植入式脑机接口系统研发 | 神经科学研究服务</p>
         </div>
         <div class="footer-links">
           <p class="footer-h" data-i18n="footer.h.site">站点</p>
           <a href="index.html" data-i18n="nav.home">首页</a>
+          <a href="platform.html" data-i18n="nav.platform">产品与服务</a>
           <a href="technology.html" data-i18n="nav.tech">核心技术</a>
-          <a href="platform.html" data-i18n="nav.platform">产品</a>
           <a href="apps.html" data-i18n="nav.apps">应用场景</a>
+          <a href="partners.html" data-i18n="nav.partners">科研合作</a>
         </div>
         <div class="footer-links">
           <p class="footer-h" data-i18n="footer.h.more">更多</p>
-          <a href="partners.html" data-i18n="nav.partners">科研合作</a>
           <a href="shop.html" data-i18n="nav.shop">采购商城</a>
+          <a href="news.html" data-i18n="nav.news">新闻动态</a>
+          <a href="about.html" data-i18n="nav.about">关于我们</a>
           <a href="contact.html" data-i18n="nav.contact">联系我们</a>
           <a href="assets/docs/huanlian-product-manual.pdf" target="_blank" rel="noopener" data-i18n="footer.h.pdf">产品手册 PDF</a>
         </div>

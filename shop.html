@@ -46,7 +46,7 @@
   </script>
 </head>
   <body data-page="shop">
-    <a class="skip-to-content" href="#main-content">跳到正文 / Skip to content</a>
+    <a class="skip-to-content" href="#main-content">Skip to content</a>
     <header class="site-header" data-site-header>
       <a class="brand" href="index.html" aria-label="Huanlian Technology">
         <span class="brand-mark" aria-hidden="true"></span>
@@ -61,354 +61,341 @@
       </button>
             <nav class="primary-nav" id="primary-nav" data-primary-nav>
         <a href="index.html" data-nav-link="home" data-i18n="nav.home">首页</a>
+        <a href="platform.html" data-nav-link="platform" data-i18n="nav.platform">产品与服务</a>
         <a href="technology.html" data-nav-link="technology" data-i18n="nav.tech">核心技术</a>
-        <a href="platform.html" data-nav-link="platform" data-i18n="nav.platform">产品</a>
         <a href="apps.html" data-nav-link="apps" data-i18n="nav.apps">应用场景</a>
         <a href="partners.html" data-nav-link="partners" data-i18n="nav.partners">科研合作</a>
         <a href="shop.html" data-nav-link="shop" data-i18n="nav.shop">采购商城</a>
+        <a href="news.html" data-nav-link="news" data-i18n="nav.news">新闻动态</a>
+        <a href="about.html" data-nav-link="about" data-i18n="nav.about">关于我们</a>
         <a href="contact.html" data-nav-link="contact" data-i18n="nav.contact">联系我们</a>
         <button type="button" class="lang-switch" data-lang-switch>EN</button>
       </nav>
     </header>
 
     <main id="main-content">
-      <section class="page-hero shop-hero" aria-labelledby="shop-title">
-        <div>
-          <p class="eyebrow" data-i18n="shop.hero.kicker">商城 · Shop</p>
-          <h1 id="shop-title" data-i18n="shop.hero.title">设备与询价</h1>
-          <p data-i18n="shop.hero.lede">BCI 医疗器械、科研仪器与康复整体方案均以询价方式交付，可按实验需求定制配置。</p>
+      <section class="page-hero shop-hero shop-hero-rich" id="shop-overview" aria-labelledby="shop-title">
+        <div class="shop-hero-bg" aria-hidden="true">
+          <img src="assets/images/hero-bg-shop.png" alt="" loading="eager">
         </div>
-        <div class="shop-tags">
-          <span data-i18n="shop.hero.tag1">Implantable</span>
-          <span data-i18n="shop.hero.tag2">Research</span>
-          <span data-i18n="shop.hero.tag3">Rehab</span>
-          <span data-i18n="shop.hero.tag4">Lifestyle</span>
-        </div>
-      </section>
-
-      <section class="section-band shop-band" aria-labelledby="shop-implant-title">
-        <div class="section-heading align-left">
-          <p class="eyebrow" data-i18n="shop.section.implantKicker">植入式 · 医疗级</p>
-          <h2 id="shop-implant-title" data-i18n="shop.section.implant">植入式与全植入</h2>
-        </div>
-        <div class="product-grid">
-          <article class="product-card">
-            <figure class="product-thumb">
-              <video src="assets/media/probe-glow.mp4" muted autoplay loop playsinline poster="assets/images/hero-implant.png"></video>
-              <span class="product-badge" data-i18n="shop.badge.medical">医疗级</span>
-            </figure>
-            <div class="product-info">
-              <p class="product-kicker" data-i18n="shop.products.spikelink.kicker">SpikeLink</p>
-              <h3 data-i18n="shop.products.spikelink.title">全植入无线脑机接口系统</h3>
-              <p data-i18n="shop.products.spikelink.body">面向临床场景的全植入无线 BCI 旗舰产品，与 NeuroBox / 电极 / 软件构成实验室—临床—院外完整闭环。</p>
-              <div class="product-meta">
-                <span data-i18n="shop.card.quote">询价</span>
-                <a class="button button-secondary" href="mailto:AstroMind@xnzlsmart.cn?subject=SpikeLink%20Inquiry" data-i18n="shop.cta.spikelink">询价 SpikeLink</a>
-              </div>
-            </div>
-          </article>
+        <div class="page-hero-copy">
+          <h1 id="shop-title" data-i18n="shop.hero.title">采购商城</h1>
+          <p class="page-hero-lede" data-i18n="shop.overview.lede">科研耗材、康复设备、消费产品，一站式采购。</p>
+          <ul class="overview-grid">
+            <li><h3 data-i18n="shop.overview.c1Title">科研耗材与仪器</h3><p data-i18n="shop.overview.c1Body">电极、采集系统、分析软件、连接线</p><a class="card-cta" href="#shop-research" data-i18n="shop.overview.c1Cta">查看 →</a></li>
+            <li><h3 data-i18n="shop.overview.c2Title">康复设备</h3><p data-i18n="shop.overview.c2Body">脑电帽、外骨骼、刺激系统、康复训练系统</p><a class="card-cta" href="#shop-rehab" data-i18n="shop.overview.c2Cta">查看 →</a></li>
+            <li><h3 data-i18n="shop.overview.c3Title">消费产品</h3><p data-i18n="shop.overview.c3Body">脑机接口眼镜、头环、心脑训练仪</p><a class="card-cta" href="#shop-life" data-i18n="shop.overview.c3Cta">查看 →</a></li>
+          </ul>
         </div>
       </section>
 
-      <section class="section-band shop-band" aria-labelledby="shop-electrode-title">
+      <section class="section-band shop-band" id="shop-research" aria-labelledby="shop-research-title">
         <div class="section-heading align-left">
-          <p class="eyebrow" data-i18n="shop.section.electrodeKicker">电极系列</p>
-          <h2 id="shop-electrode-title" data-i18n="shop.section.electrode">电极矩阵</h2>
+          <p class="eyebrow" data-i18n="shop.section.researchKicker">第2屏 · 科研</p>
+          <h2 id="shop-research-title" data-i18n="shop.section.research">科研耗材与仪器</h2>
         </div>
         <div class="product-grid">
           <article class="product-card">
-            <figure class="product-thumb">
-              <video src="assets/media/ecog-zoom.mp4" muted autoplay loop playsinline poster="assets/images/ecog-array.png"></video>
-              <span class="product-badge" data-i18n="shop.badge.research">研究级</span>
-            </figure>
+            <figure class="product-thumb"><img src="assets/images/neuropixels.png" alt="密歇根电极" loading="lazy"><span class="product-badge" data-i18n="shop.badge.research">研究级</span></figure>
             <div class="product-info">
-              <p class="product-kicker" data-i18n="shop.products.ecog.kicker">ECoG</p>
-              <h3 data-i18n="shop.products.ecog.title">ECoG 柔性皮层电极</h3>
-              <p data-i18n="shop.products.ecog.body">皮层贴合度高、信号稳定，适合长期 LFP 跟踪与多脑区 ECoG 观测。</p>
+              <p class="product-kicker">Michigan</p>
+              <h3 data-i18n="shop.products.michigan.title">密歇根电极</h3>
+              <p data-i18n="shop.products.michigan.body">规格：32 / 64 / 128 / 256 通道可选。</p>
               <div class="product-meta">
-                <span data-i18n="shop.card.quote">询价</span>
-                <a class="button button-secondary" href="mailto:AstroMind@xnzlsmart.cn?subject=ECoG%20Inquiry" data-i18n="shop.cta.ecog">询价 ECoG</a>
+                <button type="button" class="button button-tiny" data-add-quote data-i18n="shop.card.addToQuote">+ 询价单</button>
+                <a class="button button-secondary" href="mailto:AstroMind@xnzlsmart.cn?subject=Michigan%20Inquiry" data-i18n="shop.cta.michigan">在线询价</a>
               </div>
             </div>
           </article>
           <article class="product-card">
-            <figure class="product-thumb">
-              <img src="assets/images/neuropixels.png" alt="密歇根硅基探针" loading="lazy">
-              <span class="product-badge" data-i18n="shop.badge.research">研究级</span>
-            </figure>
+            <figure class="product-thumb"><video src="assets/media/ecog-zoom.mp4" muted autoplay loop playsinline poster="assets/images/ecog-array.png"></video><span class="product-badge" data-i18n="shop.badge.research">研究级</span></figure>
             <div class="product-info">
-              <p class="product-kicker" data-i18n="shop.products.michigan.kicker">Silicon</p>
-              <h3 data-i18n="shop.products.michigan.title">密歇根硅基电极</h3>
-              <p data-i18n="shop.products.michigan.body">32–256 通道、超薄针体，兼容光遗传，记录 Spike + LFP，长期稳定的在体电生理。</p>
+              <p class="product-kicker">ECoG</p>
+              <h3 data-i18n="shop.products.ecog.title">ECoG 柔性电极</h3>
+              <p data-i18n="shop.products.ecog.body">规格：32 / 64 / 128 通道可选。</p>
               <div class="product-meta">
-                <span data-i18n="shop.card.quote">询价</span>
-                <a class="button button-secondary" href="mailto:AstroMind@xnzlsmart.cn?subject=Michigan%20Probe%20Inquiry" data-i18n="shop.cta.michigan">询价密歇根硅基</a>
+                <button type="button" class="button button-tiny" data-add-quote data-i18n="shop.card.addToQuote">+ 询价单</button>
+                <a class="button button-secondary" href="mailto:AstroMind@xnzlsmart.cn?subject=ECoG%20Inquiry" data-i18n="shop.cta.ecog">在线询价</a>
               </div>
             </div>
           </article>
           <article class="product-card">
-            <figure class="product-thumb">
-              <img src="assets/images/engineer-probe.png" alt="微丝电极阵列" loading="lazy">
-              <span class="product-badge" data-i18n="shop.badge.research">研究级</span>
-            </figure>
+            <figure class="product-thumb"><img src="assets/images/neuropixels.png" alt="微丝电极" loading="lazy" onerror="this.src='assets/images/neuropixels.png'"><span class="product-badge" data-i18n="shop.badge.research">研究级</span></figure>
             <div class="product-info">
-              <p class="product-kicker" data-i18n="shop.products.microwire.kicker">Microwire</p>
-              <h3 data-i18n="shop.products.microwire.title">微丝电极阵列</h3>
-              <p data-i18n="shop.products.microwire.body">纤细电极丝 + PEG 封装精准穿刺，记录 Spike/LFP，同时支持微电流刺激实验。</p>
+              <p class="product-kicker">Microwire</p>
+              <h3 data-i18n="shop.products.microwire.title">微丝电极</h3>
+              <p data-i18n="shop.products.microwire.body">规格：16 / 32 / 64 通道。</p>
               <div class="product-meta">
-                <span data-i18n="shop.card.quote">询价</span>
-                <a class="button button-secondary" href="mailto:AstroMind@xnzlsmart.cn?subject=Microwire%20Inquiry" data-i18n="shop.cta.microwire">询价微丝阵列</a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section-band shop-band" aria-labelledby="shop-acq-title">
-        <div class="section-heading align-left">
-          <p class="eyebrow" data-i18n="shop.section.acqKicker">采集与定位</p>
-          <h2 id="shop-acq-title" data-i18n="shop.section.acq">采集主机与植入定位</h2>
-        </div>
-        <div class="product-grid">
-          <article class="product-card">
-            <figure class="product-thumb">
-              <video src="assets/media/lab-monitors.mp4" muted autoplay loop playsinline poster="assets/images/lab-night.png"></video>
-              <span class="product-badge" data-i18n="shop.badge.research">研究级</span>
-            </figure>
-            <div class="product-info">
-              <p class="product-kicker" data-i18n="shop.products.neurobox.kicker">NeuroBox</p>
-              <h3 data-i18n="shop.products.neurobox.title">NeuroBox 高通量采集</h3>
-              <p data-i18n="shop.products.neurobox.body">2048 通道高通量主机，0–30 kHz 在线采样、芯片带宽实时调节、多通道阻抗测量。</p>
-              <div class="product-meta">
-                <span data-i18n="shop.card.quote">询价</span>
-                <a class="button button-secondary" href="mailto:AstroMind@xnzlsmart.cn?subject=NeuroBox%20Inquiry" data-i18n="shop.cta.neurobox">询价 NeuroBox</a>
+                <button type="button" class="button button-tiny" data-add-quote data-i18n="shop.card.addToQuote">+ 询价单</button>
+                <a class="button button-secondary" href="mailto:AstroMind@xnzlsmart.cn?subject=Microwire%20Inquiry" data-i18n="shop.cta.microwire">在线询价</a>
               </div>
             </div>
           </article>
           <article class="product-card">
-            <figure class="product-thumb">
-              <img src="assets/images/surgical-tray.png" alt="MPM 多臂智能植入" loading="lazy">
-              <span class="product-badge" data-i18n="shop.badge.research">研究级</span>
-            </figure>
+            <figure class="product-thumb"><img src="assets/images/hd-mea-chip.png" alt="超高通量数字化神经电极" loading="lazy" onerror="this.src='assets/images/neuropixels.png'"><span class="product-badge" data-i18n="shop.badge.research">研究级</span></figure>
             <div class="product-info">
-              <p class="product-kicker" data-i18n="shop.products.mpm.kicker">MPM</p>
-              <h3 data-i18n="shop.products.mpm.title">MPM 多臂智能植入</h3>
-              <p data-i18n="shop.products.mpm.body">单次实验并行植入多支电极、光纤或注射针；Neuropixels 官方推荐适配。</p>
+              <p class="product-kicker">Ultra-HD</p>
+              <h3 data-i18n="shop.products.ultraHD.title">超高通量数字化神经电极</h3>
+              <p data-i18n="shop.products.ultraHD.body">规格：超高密度，数千通道。</p>
               <div class="product-meta">
-                <span data-i18n="shop.card.quote">询价</span>
-                <a class="button button-secondary" href="mailto:AstroMind@xnzlsmart.cn?subject=MPM%20Inquiry" data-i18n="shop.cta.mpm">询价 MPM</a>
+                <button type="button" class="button button-tiny" data-add-quote data-i18n="shop.card.addToQuote">+ 询价单</button>
+                <a class="button button-secondary" href="mailto:AstroMind@xnzlsmart.cn?subject=UltraHD%20Inquiry" data-i18n="shop.cta.ultraHD">在线询价</a>
               </div>
             </div>
           </article>
           <article class="product-card">
-            <figure class="product-thumb">
-              <img src="assets/images/acquisition-rack.png" alt="Headstage 前置放大器" loading="lazy">
-              <span class="product-badge" data-i18n="shop.badge.research">研究级</span>
-            </figure>
+            <figure class="product-thumb"><video src="assets/media/lab-monitors.mp4" muted autoplay loop playsinline poster="assets/images/lab-night.png"></video><span class="product-badge" data-i18n="shop.badge.research">研究级</span></figure>
             <div class="product-info">
-              <p class="product-kicker" data-i18n="shop.products.headstage.kicker">Headstage</p>
-              <h3 data-i18n="shop.products.headstage.title">前置放大器</h3>
-              <p data-i18n="shop.products.headstage.body">专用前置放大器 + 2 米串行连接线，低噪声预处理，无缝对接 NeuroBox。</p>
+              <p class="product-kicker">NeuroBox</p>
+              <h3 data-i18n="shop.products.neurobox.title">NeuroBox 高通量神经信号采集系统</h3>
+              <p data-i18n="shop.products.neurobox.body">规格：128 – 2048 通道。</p>
               <div class="product-meta">
-                <span data-i18n="shop.card.quote">询价</span>
-                <a class="button button-secondary" href="mailto:AstroMind@xnzlsmart.cn?subject=Headstage%20Inquiry" data-i18n="shop.cta.headstage">询价 Headstage</a>
+                <button type="button" class="button button-tiny" data-add-quote data-i18n="shop.card.addToQuote">+ 询价单</button>
+                <a class="button button-secondary" href="mailto:AstroMind@xnzlsmart.cn?subject=NeuroBox%20Inquiry" data-i18n="shop.cta.neurobox">在线询价</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <figure class="product-thumb"><video src="assets/media/neural-waves-loop-v2.mp4" muted autoplay loop playsinline poster="assets/images/neural-waves-v2.png"></video><span class="product-badge" data-i18n="shop.badge.research">研究级</span></figure>
+            <div class="product-info">
+              <p class="product-kicker">NeuroAnalysis</p>
+              <h3 data-i18n="shop.products.analysis.title">NeuroAnalysis 神经信号分析软件</h3>
+              <p data-i18n="shop.products.analysis.body">规格：永久授权 / 年费订阅。</p>
+              <div class="product-meta">
+                <button type="button" class="button button-tiny" data-add-quote data-i18n="shop.card.addToQuote">+ 询价单</button>
+                <a class="button button-secondary" href="mailto:AstroMind@xnzlsmart.cn?subject=NeuroAnalysis%20Inquiry" data-i18n="shop.cta.analysis">在线询价</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <figure class="product-thumb"><img src="assets/images/acquisition-rack.png" alt="Headstage" loading="lazy" onerror="this.src='assets/images/neuropixels.png'"><span class="product-badge" data-i18n="shop.badge.research">研究级</span></figure>
+            <div class="product-info">
+              <p class="product-kicker">Headstage</p>
+              <h3 data-i18n="shop.products.headstage.title">Headstage 及连接线</h3>
+              <p data-i18n="shop.products.headstage.body">规格：适配多种接口。</p>
+              <div class="product-meta">
+                <button type="button" class="button button-tiny" data-add-quote data-i18n="shop.card.addToQuote">+ 询价单</button>
+                <a class="button button-secondary" href="mailto:AstroMind@xnzlsmart.cn?subject=Headstage%20Inquiry" data-i18n="shop.cta.headstage">在线询价</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <figure class="product-thumb"><img src="assets/images/bench-grid.png" alt="多臂脑图谱定位智能植入系统" loading="lazy" onerror="this.src='assets/images/neuropixels.png'"><span class="product-badge" data-i18n="shop.badge.research">研究级</span></figure>
+            <div class="product-info">
+              <p class="product-kicker">MPM</p>
+              <h3 data-i18n="shop.products.mpm.title">多臂脑图谱定位智能植入系统</h3>
+              <p data-i18n="shop.products.mpm.body">规格：多臂智能定位。</p>
+              <div class="product-meta">
+                <button type="button" class="button button-tiny" data-add-quote data-i18n="shop.card.addToQuote">+ 询价单</button>
+                <a class="button button-secondary" href="mailto:AstroMind@xnzlsmart.cn?subject=MPM%20Inquiry" data-i18n="shop.cta.mpm">在线询价</a>
               </div>
             </div>
           </article>
         </div>
       </section>
 
-      <section class="section-band shop-band" aria-labelledby="shop-software-title">
+      <section class="section-band shop-band" id="shop-rehab" aria-labelledby="shop-rehab-title">
         <div class="section-heading align-left">
-          <p class="eyebrow" data-i18n="shop.section.softKicker">软件与离体</p>
-          <h2 id="shop-software-title" data-i18n="shop.section.soft">分析软件与离体阵列</h2>
+          <p class="eyebrow" data-i18n="shop.section.rehabKicker">康复设备</p>
+          <h2 id="shop-rehab-title" data-i18n="shop.section.rehab">康复设备</h2>
         </div>
         <div class="product-grid">
           <article class="product-card">
-            <figure class="product-thumb">
-              <video src="assets/media/tech-software-loop.mp4" muted autoplay loop playsinline poster="assets/images/waveform-monitor.png"></video>
-              <span class="product-badge" data-i18n="shop.card.license">软件许可</span>
-            </figure>
+            <figure class="product-thumb"><img src="assets/images/eeg-cap.png" alt="脑电帽" loading="lazy"><span class="product-badge" data-i18n="shop.badge.hospital">医院级</span></figure>
             <div class="product-info">
-              <p class="product-kicker" data-i18n="shop.products.software.kicker">Software</p>
-              <h3 data-i18n="shop.products.software.title">NeuroAnalysis 分析软件</h3>
-              <p data-i18n="shop.products.software.body">实时波形浏览、二进制存储、一键 Spike 分选、峰电位与事件相关分析。</p>
+              <p class="product-kicker">EEG Cap</p>
+              <h3 data-i18n="shop.products.rehabEeg.title">脑电帽</h3>
+              <p data-i18n="shop.products.rehabEeg.body">规格：干电极/湿电极，成人/儿童。</p>
               <div class="product-meta">
-                <span data-i18n="shop.card.license">软件许可</span>
-                <a class="button button-secondary" href="mailto:AstroMind@xnzlsmart.cn?subject=NeuroAnalysis%20Inquiry" data-i18n="shop.cta.neuroanalysis">申请软件演示</a>
+                <button type="button" class="button button-tiny" data-add-quote data-i18n="shop.card.addToQuote">+ 询价单</button>
+                <a class="button button-secondary" href="mailto:AstroMind@xnzlsmart.cn?subject=EEG%20Cap%20Inquiry" data-i18n="shop.cta.rehabEeg">在线询价</a>
               </div>
             </div>
           </article>
           <article class="product-card">
-            <figure class="product-thumb">
-              <img src="assets/images/vr-system.png" alt="动物 VR 实验仿真系统" loading="lazy">
-              <span class="product-badge" data-i18n="shop.badge.research">研究级</span>
-            </figure>
+            <figure class="product-thumb"><img src="assets/images/clinic-room.png" alt="认知障碍康复系统" loading="lazy"><span class="product-badge" data-i18n="shop.badge.hospital">医院级</span></figure>
             <div class="product-info">
-              <p class="product-kicker" data-i18n="shop.products.vr.kicker">VR</p>
-              <h3 data-i18n="shop.products.vr.title">动物 VR 实验仿真</h3>
-              <p data-i18n="shop.products.vr.body">270° 多屏 + 运动交互平台 + 双 GPU 主机，沉浸式动物行为实验。</p>
+              <p class="product-kicker">Cognitive</p>
+              <h3 data-i18n="shop.products.cog.title">认知障碍康复系统</h3>
+              <p data-i18n="shop.products.cog.body">规格：含软件 + 脑电设备。</p>
               <div class="product-meta">
-                <span data-i18n="shop.card.quote">询价</span>
-                <a class="button button-secondary" href="mailto:AstroMind@xnzlsmart.cn?subject=VR%20System%20Inquiry" data-i18n="shop.cta.vr">询价 VR 系统</a>
+                <button type="button" class="button button-tiny" data-add-quote data-i18n="shop.card.addToQuote">+ 询价单</button>
+                <a class="button button-secondary" href="mailto:AstroMind@xnzlsmart.cn?subject=Cognitive%20Rehab%20Inquiry" data-i18n="shop.cta.cog">在线询价</a>
               </div>
             </div>
           </article>
           <article class="product-card">
-            <figure class="product-thumb">
-              <img src="assets/images/hd-mea-chip.png" alt="离体高密度微电极阵列" loading="lazy">
-              <span class="product-badge" data-i18n="shop.badge.research">研究级</span>
-            </figure>
+            <figure class="product-thumb"><img src="assets/images/rehab-robot.png" alt="手势康复系统" loading="lazy"><span class="product-badge" data-i18n="shop.badge.hospital">医院级</span></figure>
             <div class="product-info">
-              <p class="product-kicker" data-i18n="shop.products.hdmea.kicker">HD-MEA</p>
-              <h3 data-i18n="shop.products.hdmea.title">离体高密度微电极阵列</h3>
-              <p data-i18n="shop.products.hdmea.body">体外细胞功能、发育、连接与形态实时无标记检测，表型表征 / 疾病建模 / 药物研发。</p>
+              <p class="product-kicker">Hand</p>
+              <h3 data-i18n="shop.products.hand.title">手势康复系统</h3>
+              <p data-i18n="shop.products.hand.body">规格：单侧/双侧。</p>
               <div class="product-meta">
-                <span data-i18n="shop.card.quote">询价</span>
-                <a class="button button-secondary" href="mailto:AstroMind@xnzlsmart.cn?subject=HD-MEA%20Inquiry" data-i18n="shop.cta.hdmea">询价 HD-MEA</a>
+                <button type="button" class="button button-tiny" data-add-quote data-i18n="shop.card.addToQuote">+ 询价单</button>
+                <a class="button button-secondary" href="mailto:AstroMind@xnzlsmart.cn?subject=Hand%20Rehab%20Inquiry" data-i18n="shop.cta.hand">在线询价</a>
               </div>
             </div>
           </article>
-        </div>
-      </section>
-
-      <section class="section-band shop-band" aria-labelledby="shop-rehab-title">
-        <div class="section-heading align-left">
-          <p class="eyebrow" data-i18n="shop.section.rehabKicker">康复整体</p>
-          <h2 id="shop-rehab-title" data-i18n="shop.section.rehab">康复整体方案</h2>
-        </div>
-        <div class="product-grid">
+          <article class="product-card">
+            <figure class="product-thumb"><img src="assets/images/rehab-exo.png" alt="上下肢康复系统" loading="lazy"><span class="product-badge" data-i18n="shop.badge.hospital">医院级</span></figure>
+            <div class="product-info">
+              <p class="product-kicker">Limb</p>
+              <h3 data-i18n="shop.products.limb.title">上下肢康复系统</h3>
+              <p data-i18n="shop.products.limb.body">规格：上肢 / 下肢 / 上下肢一体。</p>
+              <div class="product-meta">
+                <button type="button" class="button button-tiny" data-add-quote data-i18n="shop.card.addToQuote">+ 询价单</button>
+                <a class="button button-secondary" href="mailto:AstroMind@xnzlsmart.cn?subject=Limb%20Rehab%20Inquiry" data-i18n="shop.cta.limb">在线询价</a>
+              </div>
+            </div>
+          </article>
           <article class="product-card">
             <figure class="product-thumb">
               <video src="assets/media/rehab-motion.mp4" muted autoplay loop playsinline poster="assets/images/rehab-exo.png"></video>
               <span class="product-badge" data-i18n="shop.badge.hospital">医院级</span>
             </figure>
             <div class="product-info">
-              <p class="product-kicker" data-i18n="shop.products.exo.kicker">Exoskeleton</p>
-              <h3 data-i18n="shop.products.exo.title">脑控外骨骼康复</h3>
-              <p data-i18n="shop.products.exo.body">运动意图识别 + 闭环康复，配套上下肢/手功能训练与神经调控完整链路。</p>
+              <p class="product-kicker">Exoskeleton</p>
+              <h3 data-i18n="shop.products.exo.title">外骨骼机器人</h3>
+              <p data-i18n="shop.products.exo.body">规格：下肢外骨骼，可穿戴。</p>
               <div class="product-meta">
-                <span data-i18n="shop.card.quote">询价</span>
-                <a class="button button-secondary" href="mailto:AstroMind@xnzlsmart.cn?subject=Exoskeleton%20Inquiry" data-i18n="shop.cta.exo">咨询康复方案</a>
+                <button type="button" class="button button-tiny" data-add-quote data-i18n="shop.card.addToQuote">+ 询价单</button>
+                <a class="button button-secondary" href="mailto:AstroMind@xnzlsmart.cn?subject=Exoskeleton%20Inquiry" data-i18n="shop.cta.exo">在线询价</a>
               </div>
             </div>
           </article>
           <article class="product-card">
-            <figure class="product-thumb">
-              <img src="assets/images/clinic-room.png" alt="TI 时间干涉刺激临床场景" loading="lazy">
-              <span class="product-badge" data-i18n="shop.badge.hospital">医院级</span>
-            </figure>
+            <figure class="product-thumb"><img src="assets/images/clinic-room.png" alt="电刺激系统" loading="lazy"><span class="product-badge" data-i18n="shop.badge.hospital">医院级</span></figure>
             <div class="product-info">
-              <p class="product-kicker" data-i18n="shop.products.ti.kicker">TI Stim</p>
-              <h3 data-i18n="shop.products.ti.title">TI 时间干涉刺激</h3>
-              <p data-i18n="shop.products.ti.body">非植入深部脑刺激方案，配套经颅脑电、脑磁调控完整设备。</p>
+              <p class="product-kicker">Stim</p>
+              <h3 data-i18n="shop.products.stim.title">电刺激系统</h3>
+              <p data-i18n="shop.products.stim.body">规格：单通道 / 多通道。</p>
               <div class="product-meta">
-                <span data-i18n="shop.card.solution">整体方案</span>
-                <a class="button button-secondary" href="mailto:AstroMind@xnzlsmart.cn?subject=TI%20Stim%20Inquiry" data-i18n="shop.cta.ti">咨询 TI 方案</a>
-              </div>
-            </div>
-          </article>
-          <article class="product-card">
-            <figure class="product-thumb">
-              <img src="assets/images/rehab-robot.png" alt="康复机器人" loading="lazy">
-              <span class="product-badge" data-i18n="shop.badge.hospital">医院级</span>
-            </figure>
-            <div class="product-info">
-              <p class="product-kicker" data-i18n="shop.products.robot.kicker">Robot</p>
-              <h3 data-i18n="shop.products.robot.title">康复机器人</h3>
-              <p data-i18n="shop.products.robot.body">认知 / 语言 / 吞咽功能训练机器人，可联合医院脑机数字化康复中心整体部署。</p>
-              <div class="product-meta">
-                <span data-i18n="shop.card.solution">整体方案</span>
-                <a class="button button-secondary" href="mailto:AstroMind@xnzlsmart.cn?subject=Rehab%20Robot%20Inquiry" data-i18n="shop.cta.robot">咨询康复机器人</a>
+                <button type="button" class="button button-tiny" data-add-quote data-i18n="shop.card.addToQuote">+ 询价单</button>
+                <a class="button button-secondary" href="mailto:AstroMind@xnzlsmart.cn?subject=Stim%20Inquiry" data-i18n="shop.cta.stim">在线询价</a>
               </div>
             </div>
           </article>
         </div>
       </section>
 
-      <section class="section-band shop-band" aria-labelledby="shop-life-title">
+      <section class="section-band shop-band" id="shop-life" aria-labelledby="shop-life-title">
         <div class="section-heading align-left">
-          <p class="eyebrow" data-i18n="shop.section.lifeKicker">健康生活</p>
-          <h2 id="shop-life-title" data-i18n="shop.section.life">脑机健康生活</h2>
+          <p class="eyebrow" data-i18n="shop.section.lifeKicker">消费产品</p>
+          <h2 id="shop-life-title" data-i18n="shop.section.life">消费产品</h2>
         </div>
         <div class="product-grid">
           <article class="product-card">
-            <figure class="product-thumb">
-              <img src="assets/images/eeg-cap.png" alt="消费级脑电帽" loading="lazy">
-              <span class="product-badge" data-i18n="shop.card.b2c">消费产品</span>
-            </figure>
+            <figure class="product-thumb"><img src="assets/images/bci-glasses.png" alt="脑机接口眼镜" loading="lazy"><span class="product-badge" data-i18n="shop.card.b2c">消费产品</span></figure>
             <div class="product-info">
-              <p class="product-kicker" data-i18n="shop.products.eeg.kicker">EEG Cap</p>
-              <h3 data-i18n="shop.products.eeg.title">消费级脑电帽</h3>
-              <p data-i18n="shop.products.eeg.body">多通道脑电采集，配套云端分析与个性化日常健康管理。</p>
-              <div class="product-meta">
-                <span data-i18n="shop.card.b2c">消费产品</span>
-                <a class="button button-secondary" href="mailto:AstroMind@xnzlsmart.cn?subject=EEG%20Cap%20Inquiry" data-i18n="shop.cta.eegcap">了解脑电帽</a>
-              </div>
-            </div>
-          </article>
-          <article class="product-card">
-            <figure class="product-thumb">
-              <img src="assets/images/emotion-device.png" alt="情绪分析仪器" loading="lazy">
-              <span class="product-badge" data-i18n="shop.card.b2c">消费产品</span>
-            </figure>
-            <div class="product-info">
-              <p class="product-kicker" data-i18n="shop.products.emotion.kicker">Emotion</p>
-              <h3 data-i18n="shop.products.emotion.title">情绪分析仪器</h3>
-              <p data-i18n="shop.products.emotion.body">面向心理健康、压力管理与远程关怀场景，便携可穿戴形态。</p>
-              <div class="product-meta">
-                <span data-i18n="shop.card.b2c">消费产品</span>
-                <a class="button button-secondary" href="mailto:AstroMind@xnzlsmart.cn?subject=Emotion%20Analyzer%20Inquiry" data-i18n="shop.cta.emotion">了解情绪分析</a>
-              </div>
-            </div>
-          </article>
-          <article class="product-card">
-            <figure class="product-thumb">
-              <img src="assets/images/bci-glasses.png" alt="脑机接口眼镜" loading="lazy">
-              <span class="product-badge" data-i18n="shop.card.b2c">消费产品</span>
-            </figure>
-            <div class="product-info">
-              <p class="product-kicker" data-i18n="shop.products.glasses.kicker">BCI Glasses</p>
+              <p class="product-kicker">BCI Glasses</p>
               <h3 data-i18n="shop.products.glasses.title">脑机接口眼镜</h3>
-              <p data-i18n="shop.products.glasses.body">把脑机能力与眼动、专注力反馈结合，应用于学习辅助与生活效率提升。</p>
+              <p data-i18n="shop.products.glasses.body">规格：经典款 / Pro 款。</p>
               <div class="product-meta">
                 <span data-i18n="shop.card.b2c">消费产品</span>
-                <a class="button button-secondary" href="mailto:AstroMind@xnzlsmart.cn?subject=BCI%20Glasses%20Inquiry" data-i18n="shop.cta.glasses">了解 BCI 眼镜</a>
+                <a class="button button-primary button-tiny" href="mailto:AstroMind@xnzlsmart.cn?subject=BCI%20Glasses%20Order" data-i18n="shop.cta.buyGlasses">立即购买</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <figure class="product-thumb"><img src="assets/images/emotion-device.png" alt="心脑训练仪" loading="lazy"><span class="product-badge" data-i18n="shop.card.b2c">消费产品</span></figure>
+            <div class="product-info">
+              <p class="product-kicker">Trainer</p>
+              <h3 data-i18n="shop.products.trainer.title">心脑训练仪</h3>
+              <p data-i18n="shop.products.trainer.body">规格：标准版。</p>
+              <div class="product-meta">
+                <span data-i18n="shop.card.b2c">消费产品</span>
+                <a class="button button-primary button-tiny" href="mailto:AstroMind@xnzlsmart.cn?subject=Trainer%20Order" data-i18n="shop.cta.buyTrainer">立即购买</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <figure class="product-thumb"><img src="assets/images/eeg-cap.png" alt="智能头环" loading="lazy"><span class="product-badge" data-i18n="shop.card.b2c">消费产品</span></figure>
+            <div class="product-info">
+              <p class="product-kicker">Headband</p>
+              <h3 data-i18n="shop.products.headband.title">智能头环</h3>
+              <p data-i18n="shop.products.headband.body">规格：基础版 / 专业版。</p>
+              <div class="product-meta">
+                <span data-i18n="shop.card.b2c">消费产品</span>
+                <a class="button button-primary button-tiny" href="mailto:AstroMind@xnzlsmart.cn?subject=Headband%20Order" data-i18n="shop.cta.buyHeadband">立即购买</a>
               </div>
             </div>
           </article>
         </div>
       </section>
 
-      <section class="contact-band" id="contact" aria-labelledby="shop-contact-title">
-        <div>
-          <p class="eyebrow" data-i18n="shop.order.kicker">询价方式</p>
-          <h2 id="shop-contact-title" data-i18n="shop.order.title">询价、采购与定制配置</h2>
-          <p data-i18n="shop.order.tel">电话：0551-65250690 ｜ 邮箱：AstroMind@xnzlsmart.cn</p>
-          <p data-i18n="shop.order.lede">请说明应用场景（科研 / 临床 / 院外）、通道与电极规格、所在机构与采购形式，我们将在 1-2 个工作日内回复完整方案与报价。</p>
+      <section class="section-band quote-form-band" id="quote-form" aria-labelledby="quote-form-title">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="shop.quote.kicker">询价单</p>
+          <h2 id="quote-form-title" data-i18n="shop.quote.title">批量询价 · 多产品一次提交</h2>
+          <p data-i18n="shop.quote.sub">科研耗材与康复设备支持「加入询价单」，您可一次性提交多个产品询价。消费产品请直接通过「立即购买」联系客服。</p>
+          <p class="quote-contact" data-i18n="shop.order.tel">电话：0551-65250690 ｜ 邮箱：AstroMind@xnzlsmart.cn</p>
         </div>
-        <a class="button button-primary" href="mailto:AstroMind@xnzlsmart.cn?subject=Shop%20Inquiry" data-i18n="shop.order.cta">发送询价</a>
+
+        <form class="quote-form" data-mailto-form data-mailto-to="AstroMind@xnzlsmart.cn" data-mailto-subject="询价单 · 批量采购">
+          <div class="quote-cart">
+            <label data-i18n="shop.quote.cartLabel">已添加产品</label>
+            <ul class="quote-cart-list" data-quote-cart-list aria-live="polite">
+              <li class="quote-cart-empty" data-i18n="shop.quote.empty">尚未添加产品。请在上方产品卡片点击「+ 询价单」。</li>
+            </ul>
+            <input type="hidden" name="products" data-quote-products>
+          </div>
+
+          <div class="form-row">
+            <label for="quote-org" data-i18n="shop.quote.orgLabel">机构名称 *</label>
+            <input type="text" id="quote-org" name="org" required data-i18n-attr="placeholder:shop.quote.orgPlaceholder" placeholder="请输入机构全称">
+          </div>
+          <div class="form-row">
+            <label for="quote-name" data-i18n="shop.quote.nameLabel">联系人 *</label>
+            <input type="text" id="quote-name" name="name" required data-i18n-attr="placeholder:shop.quote.namePlaceholder" placeholder="请输入联系人姓名">
+          </div>
+          <div class="form-row">
+            <label for="quote-tel" data-i18n="shop.quote.telLabel">联系电话 *</label>
+            <input type="tel" id="quote-tel" name="tel" required data-i18n-attr="placeholder:shop.quote.telPlaceholder" placeholder="请输入手机号">
+          </div>
+          <div class="form-row">
+            <label for="quote-email" data-i18n="shop.quote.emailLabel">邮箱 *</label>
+            <input type="email" id="quote-email" name="email" required data-i18n-attr="placeholder:shop.quote.emailPlaceholder" placeholder="请输入邮箱">
+          </div>
+          <div class="form-row form-row-textarea">
+            <label for="quote-notes" data-i18n="shop.quote.notesLabel">采购需求说明</label>
+            <textarea id="quote-notes" name="notes" rows="3" data-i18n-attr="placeholder:shop.quote.notesPlaceholder" placeholder="补充说明，如期望交期、特殊要求等（选填）"></textarea>
+          </div>
+          <div class="form-row form-actions">
+            <button type="submit" class="button button-primary" data-i18n="shop.quote.submit">提交询价单</button>
+            <p class="form-note" data-i18n="shop.quote.note">提交后，销售将在 3 个工作日内与您联系，提供正式报价。</p>
+          </div>
+        </form>
       </section>
     </main>
+
+    <div class="quote-bar" data-quote-bar hidden aria-live="polite">
+      <span class="quote-bar-count">
+        <strong data-quote-count>0</strong>
+        <span data-i18n="shop.quote.barLabel">件已加入询价单</span>
+      </span>
+      <a class="button button-primary button-tiny" href="#quote-form" data-i18n="shop.quote.barView">查看询价单 →</a>
+    </div>
 
     <footer class="site-footer">
       <div class="footer-grid">
         <div class="footer-brand">
           <span class="footer-mark" aria-hidden="true"></span>
           <p class="footer-name" data-i18n="footer.name">合肥幻联科技有限公司</p>
-          <p class="footer-sub" data-i18n="footer.sub">幻联科技 · Huanlian Technology</p>
+          <p class="footer-sub" data-i18n="footer.sub">生命数字化探索 | 植入式脑机接口系统研发 | 神经科学研究服务</p>
         </div>
         <div class="footer-links">
           <p class="footer-h" data-i18n="footer.h.site">站点</p>
           <a href="index.html" data-i18n="nav.home">首页</a>
+          <a href="platform.html" data-i18n="nav.platform">产品与服务</a>
           <a href="technology.html" data-i18n="nav.tech">核心技术</a>
-          <a href="platform.html" data-i18n="nav.platform">产品</a>
           <a href="apps.html" data-i18n="nav.apps">应用场景</a>
+          <a href="partners.html" data-i18n="nav.partners">科研合作</a>
         </div>
         <div class="footer-links">
           <p class="footer-h" data-i18n="footer.h.more">更多</p>
-          <a href="partners.html" data-i18n="nav.partners">科研合作</a>
           <a href="shop.html" data-i18n="nav.shop">采购商城</a>
+          <a href="news.html" data-i18n="nav.news">新闻动态</a>
+          <a href="about.html" data-i18n="nav.about">关于我们</a>
           <a href="contact.html" data-i18n="nav.contact">联系我们</a>
           <a href="assets/docs/huanlian-product-manual.pdf" target="_blank" rel="noopener" data-i18n="footer.h.pdf">产品手册 PDF</a>
         </div>

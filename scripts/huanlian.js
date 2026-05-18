@@ -13,11 +13,23 @@
   }
 
   // Scroll-triggered reveal (Neuralink/SpaceX feel)
+  // NOTE: child cards (.compact-card, .product-card, .overview-grid li, etc.)
+  // are styled opacity:0 by default and require an ancestor .is-visible to
+  // appear, so the parent sections in this selector list cannot be removed
+  // without breaking the card cascade.
   if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches && "IntersectionObserver" in window) {
     const targets = document.querySelectorAll(
-      ".section-band, .cinematic-band, .stack-with-media, .product-card, .demo-band, .capability-block, .architecture-flow article, .application-list article, .evidence-grid article"
+      ".page-hero, .section-band, .cinematic-band, .stack-with-media, .product-card, .demo-band, .capability-block, .architecture-flow article, .application-list article, .evidence-grid article"
     );
     targets.forEach((el) => el.classList.add("reveal"));
+    // Mark any element already in or above the viewport visible immediately so
+    // they never paint at opacity:0 on initial render.
+    const vh = window.innerHeight;
+    targets.forEach((el) => {
+      if (el.getBoundingClientRect().top < vh) {
+        el.classList.add("is-visible");
+      }
+    });
     const io = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -27,9 +39,19 @@
           }
         });
       },
-      { rootMargin: "0px 0px -8% 0px", threshold: 0.05 }
+      { rootMargin: "0px 0px 25% 0px", threshold: 0 }
     );
-    targets.forEach((el) => io.observe(el));
+    targets.forEach((el) => {
+      if (!el.classList.contains("is-visible")) io.observe(el);
+    });
+    // Safety fallback: any reveal element still hidden after 1.5s gets shown
+    // — guards against IO never firing (e.g. in static screenshots or when
+    // the user lands deep-linked and never scrolls).
+    window.setTimeout(() => {
+      document.querySelectorAll(".reveal:not(.is-visible)").forEach((el) => {
+        el.classList.add("is-visible");
+      });
+    }, 1500);
   }
 
   // Lazy autoplay for cinematic / hero loops; hover-to-play for shop cards
@@ -216,4 +238,131 @@
   resizeCanvas();
   drawSignal();
   window.addEventListener("resize", resizeCanvas);
+})();
+
+(function newsFilter() {
+  var filters = document.querySelectorAll("[data-news-filter]");
+  if (!filters.length) return;
+  var items = document.querySelectorAll("[data-news-cat]");
+  filters.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var cat = btn.dataset.newsFilter;
+      filters.forEach(function (b) { b.classList.toggle("is-active", b === btn); });
+      items.forEach(function (it) {
+        it.classList.toggle("is-hidden", cat !== "all" && it.dataset.newsCat !== cat);
+      });
+    });
+  });
+})();
+
+(function mailtoForms() {
+  var forms = document.querySelectorAll("form[data-mailto-form]");
+  forms.forEach(function (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+      var to = form.dataset.mailtoTo || "AstroMind@xnzlsmart.cn";
+      var subject = form.dataset.mailtoSubject || "Inquiry";
+      var lines = [];
+      form.querySelectorAll("input, select, textarea").forEach(function (f) {
+        if (!f.name || !f.value || f.type === "hidden") return;
+        var label = (form.querySelector('label[for="' + f.id + '"]') || {}).textContent || f.name;
+        lines.push(label.replace(/\s*\*\s*$/, "").trim() + ": " + f.value);
+      });
+      var prodInput = form.querySelector("[data-quote-products]");
+      if (prodInput && prodInput.value) {
+        lines.unshift("产品清单 / Products:\n" + prodInput.value, "");
+      }
+      var url = "mailto:" + to +
+        "?subject=" + encodeURIComponent(subject) +
+        "&body=" + encodeURIComponent(lines.join("\n"));
+      window.location.href = url;
+    });
+  });
+})();
+
+(function quoteCart() {
+  var buttons = document.querySelectorAll("[data-add-quote]");
+  if (!buttons.length) return;
+  var listEl = document.querySelector("[data-quote-cart-list]");
+  var hiddenInput = document.querySelector("[data-quote-products]");
+  var countEl = document.querySelector("[data-quote-count]");
+  var bar = document.querySelector("[data-quote-bar]");
+  var cart = [];
+  var quoteCopy = {
+    zh: {
+      empty: "尚未添加产品。请在上方产品卡片点击「+ 询价单」。",
+      unnamed: "未命名产品",
+      remove: "移除",
+      added: "✓ 已加入",
+      add: "+ 询价单",
+    },
+    en: {
+      empty: "No products yet. Click \"+ Quote list\" on a card above to add.",
+      unnamed: "Unnamed product",
+      remove: "Remove",
+      added: "✓ Added",
+      add: "+ Quote list",
+    },
+  };
+
+  function currentQuoteCopy() {
+    return document.documentElement.lang.toLowerCase().startsWith("en") ? quoteCopy.en : quoteCopy.zh;
+  }
+
+  function render() {
+    if (!listEl) return;
+    listEl.innerHTML = "";
+    if (!cart.length) {
+      var empty = document.createElement("li");
+      empty.className = "quote-cart-empty";
+      empty.dataset.i18n = "shop.quote.empty";
+      empty.textContent = currentQuoteCopy().empty;
+      listEl.appendChild(empty);
+    } else {
+      cart.forEach(function (name) {
+        var li = document.createElement("li");
+        li.className = "quote-cart-item";
+        var span = document.createElement("span");
+        span.textContent = name;
+        var rm = document.createElement("button");
+        rm.type = "button";
+        rm.className = "quote-cart-remove";
+        rm.setAttribute("aria-label", currentQuoteCopy().remove);
+        rm.textContent = "×";
+        rm.addEventListener("click", function () {
+          var i = cart.indexOf(name);
+          if (i !== -1) cart.splice(i, 1);
+          render();
+        });
+        li.appendChild(span);
+        li.appendChild(rm);
+        listEl.appendChild(li);
+      });
+    }
+    if (hiddenInput) hiddenInput.value = cart.map(function (n, i) { return (i + 1) + ". " + n; }).join("\n");
+    if (countEl) countEl.textContent = String(cart.length);
+    if (bar) bar.hidden = cart.length === 0;
+  }
+
+  buttons.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var card = btn.closest(".product-card");
+      var h3 = card && card.querySelector("h3");
+      var name = (h3 && h3.textContent.trim()) || currentQuoteCopy().unnamed;
+      if (cart.indexOf(name) === -1) cart.push(name);
+      render();
+      btn.classList.add("is-added");
+      btn.textContent = currentQuoteCopy().added;
+      setTimeout(function () {
+        btn.classList.remove("is-added");
+        btn.textContent = currentQuoteCopy().add;
+      }, 1400);
+    });
+  });
+
+  render();
 })();
